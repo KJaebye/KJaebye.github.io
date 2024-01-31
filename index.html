@@ -67,6 +67,30 @@
         height: 1px;
         background-color: #888;
     }
+    .module {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .module .image {
+        flex: 1;
+        max-width: 50%;
+        padding-right: 20px;
+    }
+    .module .content {
+        flex: 1;
+        max-width: 50%;
+    }
+    .module img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .module video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 
 </style>
 </head>
@@ -82,7 +106,6 @@
             <p>I am a PhD student in the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science under the supervision of Prof. Yaron Lipman.
                 My main research interest is in devising deep learning methods for various 3D shapes analysis and synthesis tasks.</p>
         </div>
-
         <div class="container">
             <!-- 横向排布 -->
             <!-- <div class="content has-text-centered">
@@ -114,8 +137,20 @@
             </a>
         </div>
     </div>
-    
     <!-- 这里放置其他内容，例如其他部分的内容或链接 -->
+</div>
+
+<div class="container">
+    <div class="module">
+        <div class="image">
+            <!-- You can put your image, video or animated gif here -->
+            <img src="profile/hky_avatar.jpg" alt="科研工作图片">
+        </div>
+        <div class="content">
+            <h2>科研工作标题</h2>
+            <p>科研工作描述...</p>
+        </div>
+    </div>
 </div>
 
 
