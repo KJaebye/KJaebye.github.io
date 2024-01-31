@@ -95,6 +95,7 @@
         max-height: 100%; /* 添加最大高度限制 */
         display: flex;
         align-items: flex-start; /* 上下对齐 */
+        flex-direction: column;
     }
     .right h2{
         position: relative;
@@ -124,7 +125,78 @@
         max-height: 100%;
         height: auto;
     }
+
+    /* CSS 样式 */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        /* min-width: 150px; 最小宽度 */
+        width: 500px; /* 最大宽度 */
+        background-color: #333;
+        color: #fff;
+        text-align: left;
+        border-radius: 8px;
+        padding: 10px;
+        position: absolute;
+        z-index: 1;
+        top: 0px; /* 向上偏移50px */
+        left: 0%;
+        transform: translateX(0%);
+        opacity: .1;
+        transition: opacity 0.3s;
+        font-size: 10px; /* 设置字体大小 */
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .button {
+        width: 100px; /* 计算按钮的宽度，减去间距 */
+        height: 25px;
+        padding: 0px;
+        text-align: center;
+        background-color: #ccc; /* 按钮框的颜色 */
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; /* 添加过渡效果 */
+    }
+
+    .button:hover {
+        background-color: #999; /* 移动到上方时按钮框颜色变深 */
+    }
 </style>
+
+<script>
+    // 存储不同按钮的信息
+    var buttonInfo = {
+        aim2023: "Abstract: Single locomotion robots often struggle to adapt in highly variable or uncertain environments, especially in emergencies. In this paper, a multi-modal deformable robot is introduced that can both fly and drive. Compatibility issues with multi-modal locomotive fusion for this hybrid land-air robot are solved using proposed design conceptions, including power settings, energy selection, and designs of deformable structure. The robot can also automatically transform between land and air modes during 3D planning and tracking. Meanwhile, we proposed a algorithms for evaluation the performance of land-air robots. A series of comparisons and experiments were conducted to demonstrate the robustness and reliability of the proposed structure in complex field environments.",
+        // 其他按钮的信息
+    };
+
+    // 显示悬浮框并设置内容
+    function showTooltip(buttonId) {
+        var tooltip = document.getElementById("abstractTooltip");
+        tooltip.innerText = buttonInfo[buttonId];
+        tooltip.style.visibility = "visible";
+        tooltip.style.opacity = "1";
+    }
+
+    // 隐藏悬浮框
+    function hideTooltip() {
+        var tooltip = document.getElementById("abstractTooltip");
+        tooltip.style.visibility = "hidden";
+        tooltip.style.opacity = "0";
+    }
+</script>
+
 </head>
 
 <body>
@@ -170,12 +242,26 @@
         </div>
         <div class="right">
             <h2>A Multi-modal Deformable Land-air Robot for Complex Environments</h2>
-            <p>
-                <author>Xinyu Zhang, Yuanhao Huang, <me>Kangyao Huang*</me>, Xiaoyu Wang, Dafeng Jin, Huaping Liu, Jun Li</author>
-            </p>
-            <p>
-                <conf>IEEE/ASME International Conference on Advanced Intelligent Mechatronics(AIM) 2023</conf>
-            </p>
+            <author>Xinyu Zhang, Yuanhao Huang, <me>Kangyao Huang</me><ion-icon name="mail-outline"></ion-icon>, Xiaoyu Wang, Dafeng Jin, Huaping Liu, Jun Li</author>
+            <conf>IEEE/ASME International Conference on Advanced Intelligent Mechatronics(AIM) 2023</conf>
+            <div>
+                <!-- 添加按钮 -->
+                <div class="buttons">
+                    <div class="tooltip">
+                        <button class="button" id="projectBtn">Project Page</button>
+                    </div>
+                    <div class="tooltip" onmouseover="showTooltip('aim2023')" onmouseout="hideTooltip()">
+                        <button class="button">Abstract</button>
+                        <span id="abstractTooltip" class="tooltiptext">Abstract information</span>
+                    </div>
+                    <div class="tooltip">
+                        <button class="button" id="paperBtn">Paper</button>
+                    </div>
+                    <div class="tooltip">
+                        <button class="button" id="codeBtn">Code</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
