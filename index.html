@@ -68,8 +68,7 @@
     }
     .module {
         display: flex;
-        flex-direction: row;
-        margin-bottom: 20px;
+        flex: 1;
     }
     .module h2{
         position: relative;
@@ -77,26 +76,21 @@
         font-size: 20px; /* 根据需要调整字体大小 */
         color: #888; /* 根据需要调整颜色 */
     }
-    .module .image {
-        flex: 1;
-        max-width: 40%;
-        padding-right: 20px;
+    .left {
+        flex: 40%;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .module .content {
-        flex: 1;
-        max-width: 60%;
+    .right {
+        flex: 60%;
+        padding: 20px;
     }
-    .module img {
+    img {
         max-width: 100%;
         height: auto;
-        display: block;
     }
-    .module video {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-
 </style>
 </head>
 
@@ -135,15 +129,11 @@
 <div class="container">
     <div class="module">
         <h2>PUBLICATIONS</h2>
-        <div class="content has-text-centered">
-            <div class="image">
-                <!-- You can put your image, video or animated gif here -->
-                <img src="material/2023aim.gif" alt="科研工作图片">
-            </div>
-            <div class="content">
-                <h2>A Multi-modal Deformable Land-air Robot for Complex Environments</h2>
-                <p>科研工作描述...</p>
-            </div>
+        <div class="left">
+            <img src="material/2023aim.gif" alt="Your Image">
+        </div>
+        <div class="right">
+            <p>This is the explanation text. It can be long enough to wrap to the next line.</p>
         </div>
     </div>
 </div>
