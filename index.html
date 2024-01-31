@@ -33,6 +33,25 @@
         max-width: 600px;
         margin: 20px;
     }
+
+    .introduction h2 {
+        position: relative;
+        font-size: 24px; /* 根据需要调整字体大小 */
+    }
+    .introduction h3 {
+        font-size: 20px; /* 根据需要调整字体大小 */
+        color: #555; /* 根据需要调整颜色 */
+        margin-top: 10px; /* 添加一些顶部间距 */
+    }
+    .introduction h3::after {
+        content: "";
+        display: block;
+        width: 30px; /* 根据需要调整宽度 */
+        height: 2px;
+        background-color: #ccc;
+        margin-top: 5px; /* 调整横线与文字的间距 */
+    }
+
 </style>
 </head>
 <body>
@@ -42,6 +61,7 @@
         <img src="profile/hky_avatar.jpg" alt="My Photo">
         <div class="introduction">
             <h2>Kangyao Huang</h2>
+            <h3>PhD Candidate | AI Researcher | Aircraft Engineer</h3>
             <p>I am a PhD student in the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science under the supervision of Prof. Yaron Lipman.
                 My main research interest is in devising deep learning methods for various 3D shapes analysis and synthesis tasks.</p>
         </div>
