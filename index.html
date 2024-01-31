@@ -82,13 +82,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 40%; /* 添加最大宽度限制 */
+        max-height: 100%; /* 添加最大高度限制 */
     }
     .right {
         flex: 60%;
         padding: 20px;
+        max-width: 60%; /* 添加最大宽度限制 */
+        max-height: 100%; /* 添加最大高度限制 */
+        display: flex;
+        align-items: flex-start; /* 上下对齐 */
     }
     img {
         max-width: 100%;
+        max-height: 100%;
         height: auto;
     }
 </style>
