@@ -1,1 +1,53 @@
-这是我的主页
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人网页</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .profile img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    .introduction {
+        text-align: left;
+        max-width: 600px;
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile">
+        <img src="profile/hky_avatar.jpg" alt="My Photo">
+        <div class="introduction">
+            <h2>Kangyao Huang</h2>
+            <p>I am a PhD student in the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science under the supervision of Prof. Yaron Lipman.
+                My main research interest is in devising deep learning methods for various 3D shapes analysis and synthesis tasks.</p>
+        </div>
+    </div>
+    <!-- 这里放置其他内容，例如其他部分的内容或链接 -->
+</div>
+
+</body>
+</html>
