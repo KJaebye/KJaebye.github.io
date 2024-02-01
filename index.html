@@ -1,272 +1,611 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-<link rel="icon" href="./profile/bug.svg">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    .icon-link {
-        font-size: 25px;
-        color: #000;
-        text-decoration: none;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        max-width: 1000px;
-    }
-    .profile img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        margin-right: 20px;
-    }
-    .introduction {
-        text-align: left;
-        max-width: 600px;
-        margin: 20px;
-    }
-    .introduction p {
-        font-size: 13px; /* 根据需要调整字体大小 */
-        color: #888;
-        line-height: 1.6; 
-    }
-
-    .introduction h2 {
-        position: relative;
-        font-size: 36px; /* 根据需要调整字体大小 */
-    }
-    .introduction h3 {
-        font-size: 15px; /* 根据需要调整字体大小 */
-        color: #888; /* 根据需要调整颜色 */
-        margin-top: 10px; /* 添加一些顶部间距 */
-        position: relative;
-    }
-    .introduction h3::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -10px; /* 调整横线与文字的间距 */
-        width: 100%;
-        height: 1px;
-        background-color: #888;
-    }
-    .module {
-        display: flex;
-        flex: 1;
-        max-width: 1000px;
-        max-height: 120px;
-    }
-    .module h2{
-        position: relative;
-        text-align: left;
-        font-size: 20px; /* 根据需要调整字体大小 */
-        color: #888; /* 根据需要调整颜色 */
-    }
-    .left {
-        flex: 40%;
-        background-color: #f0f0f0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 40%; /* 添加最大宽度限制 */
-        max-height: 100%; /* 添加最大高度限制 */
-    }
-    .right {
-        flex: 60%;
-        padding: 20px;
-        max-width: 60%; /* 添加最大宽度限制 */
-        max-height: 100%; /* 添加最大高度限制 */
-        display: flex;
-        align-items: flex-start; /* 上下对齐 */
-        flex-direction: column;
-    }
-    .right h2{
-        position: relative;
-        font-size: 16px; /* 根据需要调整字体大小 */
-        color: #888; /* 根据需要调整颜色 */
-        text-align: left;
-    }
-    .right author {
-        font-size: 13px; /* 根据需要调整字体大小 */
-        color: #888;
-        line-height: 1.6; 
-    }
-    .right me {
-        font-size: 13px; /* 根据需要调整字体大小 */
-        color: #000000;
-        line-height: 1.6; 
-        font-weight: bold;
-    }
-    .right conf {
-        font-size: 13px; /* 根据需要调整字体大小 */
-        color: #000000;
-        line-height: 1.6; 
-        font-style: italic;
-    }
-    img {
-        max-width: 100%;
-        max-height: 100%;
-        height: auto;
-    }
-
-    /* CSS 样式 */
-    .tooltip {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-    }
-    
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        /* min-width: 150px; 最小宽度 */
-        width: 500px; /* 最大宽度 */
-        background-color: #333;
-        color: #fff;
-        text-align: left;
-        border-radius: 8px;
-        padding: 10px;
-        position: absolute;
-        z-index: 1;
-        top: 0px; /* 向上偏移50px */
-        left: 0%;
-        transform: translateX(0%);
-        opacity: .1;
-        transition: opacity 0.3s;
-        font-size: 10px; /* 设置字体大小 */
-    }
-    
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .button {
-        width: 100px; /* 计算按钮的宽度，减去间距 */
-        height: 25px;
-        padding: 0px;
-        text-align: center;
-        background-color: #ccc; /* 按钮框的颜色 */
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s; /* 添加过渡效果 */
-    }
-
-    .button:hover {
-        background-color: #999; /* 移动到上方时按钮框颜色变深 */
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kangyao Huang</title>
+<link href="styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="./profile/ride.jpg"><style type="text/css">
 </style>
 
-<script>
-    // 存储不同按钮的信息
-    var buttonInfo = {
-        aim2023: "Abstract: Single locomotion robots often struggle to adapt in highly variable or uncertain environments, especially in emergencies. In this paper, a multi-modal deformable robot is introduced that can both fly and drive. Compatibility issues with multi-modal locomotive fusion for this hybrid land-air robot are solved using proposed design conceptions, including power settings, energy selection, and designs of deformable structure. The robot can also automatically transform between land and air modes during 3D planning and tracking. Meanwhile, we proposed a algorithms for evaluation the performance of land-air robots. A series of comparisons and experiments were conducted to demonstrate the robustness and reliability of the proposed structure in complex field environments.",
-        // 其他按钮的信息
-    };
-
-    // 显示悬浮框并设置内容
-    function showTooltip(buttonId) {
-        var tooltip = document.getElementById("abstractTooltip");
-        tooltip.innerText = buttonInfo[buttonId];
-        tooltip.style.visibility = "visible";
-        tooltip.style.opacity = "1";
-    }
-
-    // 隐藏悬浮框
-    function hideTooltip() {
-        var tooltip = document.getElementById("abstractTooltip");
-        tooltip.style.visibility = "hidden";
-        tooltip.style.opacity = "0";
-    }
-</script>
-
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
 </head>
 
-<body>
-
-<div class="container">
-    <div class="profile">
-        <div>
-            <img src="profile/hky_avatar.jpg" alt="My Photo">
-        </div>
-        <div class="introduction">
-            <h2>Kangyao Huang</h2>
-            <h3>PhD Candidate | AI Researcher | Aircraft Engineer</h3>
-            <p>I am pursuing a PhD degree in the Department of Computer Science and Technology at the Tsinghua University under the supervision of Prof. Huaping Liu.
-                Before that, I got an MRes in Control & Systems Engineering from ACSE, the University of Sheffield(UoS), UK., and a BEng in Aircraft Design from Northwestern Polytechnical
-                University(NWPU), China. Besides, I have several years start-up experience in aerospace and automation industrial sectors.
-
-                My main research interest is in robot learning for virtual and real world practice.</p>
-            <!-- 横向排布 -->
-            <div class="content has-text-centered" style="float: right;">
-                <a class="icon-link external-link" href="">
-                    <i class="fa fa-envelope-square"></i>
-                </a>
-                <a class="icon-link external-link" href="">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <a class="icon-link external-link" href="">
-                    <i class="fa fa-graduation-cap"></i>
-                </a>
-                <a class="icon-link external-link" href="">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-            </div>
-        </div>
+<body alink = "#282727" vlink = "#9b9b9b" link = "#9b9b9b">
+<!-- Header content -->
+<header>
+    <div class="profilePhoto"> 
+        <img src="profile/hky_avatar.jpg" alt="sample" width="240">
     </div>
-    <!-- 这里放置其他内容，例如其他部分的内容或链接 -->
-</div>
-
-
-<div class="container">
-    <h2>PUBLICATIONS</h2>
-    <div class="module">
-        <div class="left">
-            <img src="material/2023aim.gif" alt="Your Image">
+    <!-- Identity details -->
+    <section class="profileHeader">
+        <h1>Kangyao Huang</h1>
+        <h3>PhD Candidate | AI Researcher | Aircraft Engineer</h3>
+        <hr>
+        <p>I am pursuing a PhD degree in the Department of Computer Science and Technology at the Tsinghua University under the supervision of Prof. Huaping Liu.
+            Before that, I got an MRes in Control & Systems Engineering from ACSE, the University of Sheffield(UoS), UK., and a BEng in Aircraft Design from Northwestern Polytechnical
+            University(NWPU), China. Besides, I have several years start-up experience in aerospace and automation industrial sectors.
+            <br>My main research interest is in robot learning for virtual and real world practice.<br></p>
+    </section>
+    <aside class="socialNetworkNavBar">
+        <div class="socialNetworkNav"> 
+            <a href="mailto:huangky22@mails.tsinghua.edu.cn">
+                <img src="profile/mail.png"  alt="sample" width="30" ></a>
         </div>
-        <div class="right">
-            <h2>A Multi-modal Deformable Land-air Robot for Complex Environments</h2>
-            <author>Xinyu Zhang, Yuanhao Huang, <me>Kangyao Huang</me><ion-icon name="mail-outline"></ion-icon>, Xiaoyu Wang, Dafeng Jin, Huaping Liu, Jun Li</author>
-            <conf>IEEE/ASME International Conference on Advanced Intelligent Mechatronics(AIM) 2023</conf>
-            <div>
-                <!-- 添加按钮 -->
-                <div class="buttons">
-                    <div class="tooltip">
-                        <button class="button" id="projectBtn">Project Page</button>
+        <div class="socialNetworkNav">
+            <a href="https://github.com/kjaebye" target="_blank">
+                <img src="profile/github.png" alt="sample" width="30"></a>
+        </div>
+        <div class="socialNetworkNav"> 
+            <a href="https://scholar.google.com/citations?user=df7fnwQAAAAJ" target="_blank">
+                <img src="profile/scholar.jpg"  alt="sample" width="30"></a>
+        </div>
+        <div class="socialNetworkNav">
+            <a href="" target="_blank">
+                <img src="profile/linkedin.png"  alt="sample" width="30"></a>
+        </div>
+    </aside>
+</header>
+
+<!-- content -->
+<section class="mainContent"> 
+    <section class="section2">
+        <h2 class="sectionTitle">Publications</h2>
+        <hr class="sectionTitleRule">
+        <hr class="sectionTitleRule2">
+
+        <!-- 2023aim  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2023aim.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <div class="tooltip" onmouseover="showTooltip('aim2023')" onmouseout="hideTooltip()">
-                        <button class="button">Abstract</button>
-                        <span id="abstractTooltip" class="tooltiptext">Abstract information</span>
-                    </div>
-                    <div class="tooltip">
-                        <button class="button" id="paperBtn">Paper</button>
-                    </div>
-                    <div class="tooltip">
-                        <button class="button" id="codeBtn">Code</button>
+                    <img src="material/2023aim.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> A Multi-modal Deformable Land-air Robot for Complex Environments </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=gVuaz7QAAAAJ" target="_blank">Yuanhao Huang</a>, 
+                    <b>Kangyao Huang</b><ion-icon name="mail-outline"></ion-icon>, 
+                    <a style="color: #999;">Xiaoyu Wang</a>, 
+                    <a style="color: #999;">Dafeng Jin</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em>IEEE/ASME International Conference on Advanced Intelligent Mechatronics(AIM) 2023 </em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%"> 
+                <div class="dropdown">
+                    <span></span><a href="https://github.com/THU-MIR/Deformable-Aerial-Ground-Platform" target="_blank">Project Page</a>
+                </div>
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            Single locomotion robots often struggle to adapt in highly variable or uncertain environments, 
+                            especially in emergencies. In this paper, a multi-modal deformable robot is introduced that can both fly and 
+                            drive. Compatibility issues with multi-modal locomotive fusion for this hybrid land-air robot are solved using
+                             proposed design conceptions, including power settings, energy selection, and designs of deformable structure.
+                              The robot can also automatically transform between land and air modes during 3D planning and tracking. 
+                              Meanwhile, we proposed a algorithms for evaluation the performance of land-air robots. A series of 
+                              comparisons and experiments were conducted to demonstrate the robustness and reliability of the proposed 
+                              structure in complex field environments.
+                        </p>
                     </div>
                 </div>
-            </div>
+                <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2210.16875.pdf" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="https://github.com/THU-MIR/Deformable-Aerial-Ground-Platform" target="_blank">Code</a></div>
+                <div class="dropdown"><span></span><a href="https://www.youtube.com/watch?v=kGzKuHy6CmA" target="_blank">Video</a></div>
+            </aside>
         </div>
-    </div>
-</div>
 
+        <!-- 2023tmech  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2023tmech.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2023tmech.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Coupled Modeling and Fusion Control for a Multi-modal Deformable Land-air Robot </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=gVuaz7QAAAAJ" target="_blank">Yuanhao Huang</a>, 
+                    <b>Kangyao Huang</b><ion-icon name="mail-outline"></ion-icon>, 
+                    <a style="color: #999;">Ziqi Zhao</a>, 
+                    <a style="color: #999;">Jingwei Li</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> arXiv </em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%"> 
+                <div class="dropdown">
+                    <span></span><a href="https://github.com/THU-MIR/Deformable-Aerial-Ground-Platform" target="_blank">Project Page</a>
+                </div>
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            This paper introduces a structure-deformable land-air robot which possesses both excellent ground driving 
+                            and flying ability, with smooth switching mechanism between two modes. The elaborate coupled dynamics model 
+                            of the proposed robot is established, including rotors, chassis, especially the deformable structures. 
+                            Furthermore, taking fusion locomotion and complex near-ground situations into consideration, a model based 
+                            controller is designed for landing and mode switching under various harsh conditions, in which we realise the 
+                            cooperation between fused two motion modes. The entire system is implemented in ADAMS/Simulink simulation and 
+                            in practical. We conduct experiments under various complex scenarios. The results show our robot can 
+                            accomplish land-air switching swiftly and smoothly, and the designed controller can effectively improve the 
+                            landing flexibility and reliability.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2211.04185.pdf" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="https://github.com/THU-MIR/Deformable-Aerial-Ground-Platform" target="_blank">Code</a></div>
+            </aside>
+        </div>
+
+        <!-- 2023icuas  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2023ICUAS.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2023ICUAS.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Path Planning for Air-Ground Robot Considering Modal Switching Point Optimization </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <a style="color: #999;">Xiaoyu Wang</a>,
+                    <b>Kangyao Huang</b>, 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                    <a style="color: #999;">Honglin Sun</a>, 
+                    <a style="color: #999;">Wenzhuo Liu</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> International Conference on Unmanned Aircraft Systems (ICUAS) 2023 </em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%"> 
+                <div class="dropdown">
+                    <span></span><a href="https://github.com/THU-MIR/ABAS_matlab" target="_blank">Project Page</a>
+                </div>
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            An innovative sort of mobility platform that can both drive and fly is the air-ground robot. 
+                            The need for an agile flight cannot be satisfied by traditional path planning techniques for 
+                            air-ground robots. Prior studies had mostly focused on improving the energy efficiency of paths, 
+                            seldom taking the seeking speed and optimizing take-off and landing places into account. A robot for the 
+                            field application environment was proposed, and a lightweight global spatial planning technique for the 
+                            robot based on the graph-search algorithm taking mode switching point optimization into account, with an 
+                            emphasis on energy efficiency, searching speed, and the viability of real deployment. The fundamental 
+                            concept is to lower the computational burden by employing an interchangeable search approach that combines 
+                            planar and spatial search. Furthermore, to safeguard the health of the power battery and the integrity of 
+                            the mission execution, a trap escape approach was also provided. Simulations are run to test the 
+                            effectiveness of the suggested model based on the field DEM map. The simulation results show that our 
+                            technology is capable of producing finished, plausible 3D paths with a high degree of believability. 
+                            Additionally, the mode-switching point optimization method efficiently identifies additional acceptable 
+                            places for mode switching, and the improved paths use less time and energy.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2305.08178.pdf" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="https://github.com/THU-MIR/ABAS_matlab" target="_blank">Code</a></div>
+            </aside>
+        </div>
+
+        <!-- 2022tiv  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" muted="" autoplay="" loop="">
+                            <source src="material/2022tiv1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2022TIV.png" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Intelligent Amphibious Ground-aerial Vehicles: State of the Art Technology for Future Transportation </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                    <a style="color: #999;">Jiangeng Huang</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=gVuaz7QAAAAJ" target="_blank">Yuanhao Huang</a>, 
+                    <b>Kangyao Huang</b><ion-icon name="mail-outline"></ion-icon>, 
+                    <a href="https://scholar.google.com.hk/citations?user=EUnI2nMAAAAJ" target="_blank">Lei Yang</a>, 
+                    <a style="color: #999;">Yan Han</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=kLTnwAsAAAAJ" target="_blank">Li Wang</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=pKCG3T8AAAAJ" target="_blank">Jianxi Luo</a>, 
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> IEEE Transactions on Intelligent Vehicles, 2022, </em> 
+                    <a style="color: rgb(247, 121, 175);font-weight: bold;font-style: oblique;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Review</a>
+                    <em>,</em>
+                    <a style="color: rgb(247, 121, 175);font-weight: bold;font-style: oblique;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">IF: 8.2</a>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%"> 
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            Amphibious ground-aerial vehicles fuse flying and driving modes to enable more flexible air-land 
+                            mobility and have received growing attention recently. By analyzing the existing amphibious vehicles, 
+                            we highlight the autonomous fly-driving functionality for the effective uses of amphibious vehicles in 
+                            complex three-dimensional urban transportation systems. We review and summarize the key enabling 
+                            technologies for intelligent flying-driving in existing amphibious vehicle designs, identify major 
+                            technological barriers and propose potential solutions for future research and innovation. This paper 
+                            aims to serve as a guide for research and development of intelligent amphibious vehicles for urban 
+                            transportation toward the future.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2207.11384.pdf" target="_blank">Paper</a></div>
+            </aside>
+        </div>
+
+        <!-- 2021ciac  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2021CIAC.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2021CIAC.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Bio-inspired Multi-agent Model and Optimization Strategy for Collaborative Aerial Transport </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Kangyao Huang</b>, 
+                    <a href="https://scholar.google.com.hk/citations?user=j63_EA0AAAAJ" target="_blank">Jingyu Chen</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=W7ePGWYAAAAJ" target="_blank">John Oyekan</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> Springer Lecture Notes in Electrical Engineering, Chinese Intelligent Automation Conference 2021 </em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%"> 
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            Collaboration between robots provides solutions for transporting more complex and heavier loads. 
+                            In this work, inspired by the ant colony foraging and transport, we put forward two collaborative models, 
+                            Coupled-Carriers and Navigator-Carrier, for aerial cooperative transport. To achieve this, a linear quadratic 
+                            regulator (LQR) is applied to optimize the performance. The results show the task of dual-drone transport 
+                            of a bar load is successfully accomplished.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://eprints.whiterose.ac.uk/176758/1/Bio-inspired%20Multi-agent%20Model%20and%20Optimization%20Strategy%20for%20Collaborative%20Aerial%20Transport.pdf" target="_blank">Paper</a></div>
+            </aside>
+        </div>
+
+        <!-- 2023swevo  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2021SWEVO.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2021SWEVO.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Decentralised aerial swarm for adaptive and energy efficient transport of unknown loads </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Kangyao Huang</b>, 
+                    <a href="https://scholar.google.com.hk/citations?user=j63_EA0AAAAJ" target="_blank">Jingyu Chen</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=W7ePGWYAAAAJ" target="_blank">John Oyekan</a>, 
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em>Elesvier, Swarm and Evolutionary Computation, 2021 </em>
+                    <a style="color: rgb(247, 121, 175);font-weight: bold;font-style: oblique;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">IF: 10</a>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%"> 
+                <div class="dropdown">
+                    <span></span><a href="https://github.com/KJaebye/Drone-Swarm-Cooperative-Transport" target="_blank">Project Page</a>
+                </div>
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            Cooperative transport by a swarm of Quadcopters offers more flexibility and performance when carrying loads 
+                            that are complex in structural profile and mass. Ensuring that team members of the swarm are optimally placed 
+                            on these loads as well as able to resist disturbances from the environment during transport are current 
+                            research challenges. In this paper, we present a decentralized behaviour based subsumption architecture for 
+                            enabling a swarm of Quadcopters to explore an unfamiliar area, find a load and transport it to a target 
+                            location cooperatively. In the architecture, three behaviours were used: an obstacle avoidance behaviour to 
+                            avoid collisions with objects in the environment, a flocking behaviour to ensure swarm structure and a 
+                            bacterium behaviour for exploration of the environment and to adapt to the mass profile of various detected 
+                            loads.<br><br>
+
+                            By adapting to the mass profile of a detected load, we show that our architecture ensures even energy 
+                            distribution among Quadcopters while achieving robustness to disturbances from the environment. Our results 
+                            show that a mass adapting swarm is able to conserve energy during payload transportation when compared to a 
+                            swarm that does not adapt to a load's profile. Furthermore, we do not use explicit communication between team 
+                            members but instead rely on data from visual sensors attached to the Quadcopters. We experiment with 
+                            simulations in a physics informed robot simulator called CoppeliaSim and demonstrate the effectiveness of our 
+                            architecture when utilized for cooperative transport of irregular loads.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://www.sciencedirect.com/science/article/abs/pii/S221065022100119X" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="https://github.com/KJaebye/Drone-Swarm-Cooperative-Transport" target="_blank">Code</a></div>
+            </aside>
+        </div>
+
+        <br><br>
+	</section>
+
+    <!-- Projects -->
+    <section class="section2">
+        <h2 class="sectionTitle">Projects</h2>
+        <hr class="sectionTitleRule">
+        <hr class="sectionTitleRule2">
+
+        <!-- 2021ad  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2021ad.png" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2021ad.png" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Autonomous Driving Architecture towards SCSTSV </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Director:</b>
+                    <a style="color: #999;">Qifan Tan</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                    <a style="font-style: italic;">@New Technology Concept Vehicles, THU</a>
+                </h3>
+                <p style="font-size: 10px;"><b>Brief:</b> Towards the Smart City-Smart Transportation-Smart Vehicles(SCSTSV), we focuses on the key areas of autonomous 
+                    driving technology, particularly in the design and optimization of architectures for perception, decision-making, 
+                    and control. Recognizing the challenges faced by autonomous driving systems, such as accurate perception of the 
+                    surrounding environment, rapid and reliable decision-making, and effective vehicle control, I proposed a comprehensive 
+                    architecture that integrates perception, decision-making, and control into a unified framework, further enhancing 
+                    system performance through the integration of road testing equipment.</p>
+            </section>
+        </div>
+
+        <!-- solar-uav  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/solar-uav.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/solar-uav.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Solar-powered UAV for Long Duration Cruising</h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Co-op:</b>
+                    <a style="color: #999;">Colleagues </a><a style="font-style: italic;">@Bingo Intelligence Co., Ltd.</a>
+                </h3>
+                <p style="font-size: 10px;"><b>Brief:</b> This research focused on enhancing the endurance of solar-powered unmanned 
+                    aerial vehicles (UAVs) by analyzing their aerodynamic characteristics and optimizing their aerodynamic design. 
+                    A key aspect of the study involved redesigning the aerodynamic shape to improve efficiency. Additionally, I developed 
+                    a dynamic power system with low vortex drag variable-pitch propellers to adapt to varying wind speeds during flight. 
+                    By integrating these innovations, the UAVs can harness solar energy more effectively and sustain longer flight 
+                    durations, enabling them to operate efficiently across diverse environmental conditions. This research contributes 
+                    to the advancement of renewable energy-powered UAV technology, offering potential applications in various fields 
+                    such as environmental monitoring, aerial photography, and telecommunications.</p>
+            </section>
+        </div>
+
+        <!-- auto-patrolling  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/auto-patrolling.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/auto-patrolling.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Auto-Patralling UAV Platform</h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Co-op:</b> 
+                    <a style="color: #999;">Colleagues </a><a style="font-style: italic;">@Bingo Intelligence Co., Ltd.</a>
+                </h3>
+                <p style="font-size: 10px;"><b>Brief:</b> This project focused on the development of an autonomous inspection drone 
+                    system for airports. This project encompassed the overall design of the airport system and the design and production 
+                    of electromechanical controls. We prioritized the autonomous inspection functionality of the drones. Through a 
+                    comprehensive approach balancing airport safety and efficiency, we devised a complete system including structural 
+                    design of the drones, development of electromechanical control systems, and optimization of inspection algorithms. 
+                    This system not only enables comprehensive inspection of airport facilities but also autonomously responds to and 
+                    alerts to anomalies.</p>
+            </section>
+        </div>
+        
+        <!-- oil-drone  -->
+        <div onmouseout="idr_stop()" onmouseover="idr_start()">
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="idr_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/oil-drone.gif" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/oil-drone.gif" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function idr_start() {
+                    document.getElementById('idr_image').style.opacity = "1";
+                    }
+
+                    function idr_stop() {
+                    document.getElementById('idr_image').style.opacity = "0";
+                    }
+                    idr_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Oil-powered Variable-pitch Quadrotor</h2>
+                <p style="font-size: 10px;"><b>This is my BEng dissertation.</b> Notably, this is the first successful flight of 
+                    oil-powered rotary-wing UAV utilizing variable-pitch control in China. We finished it at the end of 2015.</p>
+                <p style="font-size: 10px;"><b>Brief:</b> I spearheaded a groundbreaking project focused on the development of a 
+                    oil-powered variable-pitch multirotor unmanned aerial vehicle (UAV). This project involved the comprehensive 
+                    design and prototyping testing of the UAV. Our efforts encompassed the integration of advanced variable-pitch 
+                    technology with traditional oil-powered UAV systems, leading to a novel and efficient aerial platform. We use 
+                    gears and belts as the power transmission method, where belts can effectively reduce the vibrations generated 
+                    by the engine. The successful flight testing signifies a significant milestone in the domestic UAV 
+                    industry, showcasing the feasibility and potential of variable-pitch control in enhancing the performance and 
+                    versatility of oil-powered UAVs. </p>
+            </section>
+        </div>
+
+    </section>
+
+	  
+  <hr>
+  
+</section>
+
+<footer>
+  <p class="footerDisclaimer"><span></span></p>
+  <p class="footerNote"></p>
+</footer>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
