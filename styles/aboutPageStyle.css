@@ -6,9 +6,11 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 92%;
-	max-width: 980px;
-	padding-left: 2.275%;
-	padding-right: 2.275%;
+	max-width: 960px;
+	/* padding-left: 2.275%;
+	padding-right: 2.275%; */
+	padding-left: 0%;
+	padding-right: 0%;
 }
 group {
 	display: flex;
