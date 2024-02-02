@@ -2,14 +2,16 @@
 /* Global Styles */
 @font-face {
 	font-family: 'Montserrat';
-	src: 'font/Montserrat-Regular-8.otf';
+	src: 'font/Montserrat-Regular.ttf';
+	/* src: 'font/Montserrat.ttf'; */
+	/* src: 'font/Times New Roman.ttf'; */
 }
 
 body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 92%;
-	max-width: 980px;
+	max-width: 1020px;
 	padding-left: 2.275%;
 	padding-right: 2.275%;
 }
@@ -46,10 +48,10 @@ header .profileHeader h1 {
 	color: rgb(21, 21, 21);
 	font-size: 30px;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 30px;
 }
 header .profileHeader h3 {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: rgba(146,146,146,1.00);
 	font-size: 16px;
 	font-weight: 700;
@@ -60,11 +62,11 @@ hr {
 	height: 1px;
 }
 header .profileHeader p {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #888;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 1.4;
+	line-height: 16px;
 	overflow-y: auto;
 }
 header .socialNetworkNavBar {
@@ -109,22 +111,22 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .mainContent .section1 .section1Content span {
 	color: rgba(146,146,146,1.00);
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .section2 .sectionContentTitle {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: rgba(146,146,146,1.00);
 	font-size: 16px;
 	font-weight: 700;
 }
 .section2 .sectionContentSubTitle {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: rgba(68,67,67,1.00);
 	font-size: 13px;
 	font-weight: 400;
 }
 .section2 p {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #999;
 	font-size: 13px;
 	font-weight: 400;
@@ -164,7 +166,6 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .externalResourcesNav .dropdown span {
 	font-size: 11pt;
-
 }
 
 .externalResourcesNav .dropdown a {
@@ -217,7 +218,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 /* Footer */
 footer .footerDisclaimer {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(104,103,103,1.00);
@@ -228,7 +229,7 @@ footer .footerDisclaimer span {
 	font-weight: 400;
 }
 footer .footerNote {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(104,103,103,1.00);
@@ -288,7 +289,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 .mainContent .section1 .section1Content {
 	display: inline-block;
 	text-align: left;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .mainContent .section2 {
 	display: inline-block;
@@ -342,7 +343,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 footer {
 	display: block;
 	text-align: center;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 }
 
@@ -388,7 +389,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 .mainContent .section1 .section1Content {
 	display: inline-block;
 	margin: 0% 0% 0% 0%;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
@@ -397,7 +398,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 }
 .section2 .section2Content {
 	padding: 0px;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	padding-right: 10px;
     padding-left: 5px;
     padding-bottom: 0px;
@@ -410,7 +411,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 .section2 .sectionContent {
 	padding: 0px;
 	margin-left: 0%;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	margin-top: 5%;
 	margin-bottom: 0%;
 	width: 40%;
@@ -456,12 +457,12 @@ header .socialNetworkNavBar .socialNetworkNav {
 footer .footerDisclaimer {
 	float: left;
 	margin-left: 3%;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 footer .footerNote {
 	float: right;
 	margin-right: 3%;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 }
 
@@ -501,7 +502,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 	margin-right: 0%;
 	margin-left: 30%;
 	margin-bottom: 0%;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .mainContent .section2 {
     clear: both;
@@ -513,7 +514,7 @@ header .socialNetworkNavBar .socialNetworkNav {
     padding-bottom: 0px;
     margin-left: 40%;
 	width: 60%;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 /*    float: left;*/
 /*    clear:both;*/
 /*    display: inline-block;*/
@@ -565,12 +566,12 @@ header .socialNetworkNavBar .socialNetworkNav {
 footer .footerDisclaimer {
 	float: left;
 	margin-left: 3%;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 footer .footerNote {
 	float: right;
 	margin-right: 3%;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 }
 
