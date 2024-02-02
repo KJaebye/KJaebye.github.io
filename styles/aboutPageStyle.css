@@ -15,6 +15,7 @@ body {
 	padding-left: 2.275%;
 	padding-right: 2.275%;
 }
+
 group {
 	display: flex;
 }
@@ -131,6 +132,12 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	font-size: 13px;
 	font-weight: 400;
 }
+/* .section2 img {
+	border: 1.5px solid black;
+}
+.section2 video{
+	border: 1.5px solid black;
+} */
 .mainContent {
 	display: block;
 }
@@ -477,11 +484,11 @@ header .profilePhoto {
 	float: left;
 	clear: both;
 	margin-right: 3%;
-	padding-top: 5%;
+	padding-top: 7%;
 }
 header .profileHeader {
 	text-align: left;
-	padding-top: 5%;
+	padding-top: 3%;
 }
 	
 header .socialNetworkNavBar {
