@@ -24,7 +24,7 @@
         <hr>
         <p>I am an AI researcher and robot engineer from China. Currently, I am pursuing a PhD degree in Computer Science at Tsinghua University under the supervision of Prof. Huaping Liu.
             Besides, I hold an MRes degree in Control from ACSE, the University of Sheffield(UoS), UK., supervised by Prof. John Oyekan, and a BEng degree in Aerospace from Northwestern Polytechnical
-            University(NWPU), China. Before my PhD work, I have several years start-up experience in aerospace and automation industrial sectors, serve as a UAV designer 
+            University(NWPU), China. Before my PhD work, I had several years start-up experience in aerospace and automation industrial sectors, serving as a UAV designer 
             and technical director.
             <br>
             <br>My current research interest is in robot learning for virtual and real world practice. I also follow ideas on aerial robotics, 
@@ -62,11 +62,75 @@
         <hr class="sectionTitleRule">
         <hr class="sectionTitleRule2">
 
+        <!-- 2024icra-->
+        <div onmouseout="icra24_stop()" onmouseover="icra24_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="icra24_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2024icra.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2024icra.png" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function icra24_start() {
+                    document.getElementById('icra24_image').style.opacity = "1";
+                    }
+
+                    function icra24_stop() {
+                    document.getElementById('icra24_image').style.opacity = "0";
+                    }
+                    icra24_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Stimulate the Potential of Robots via Competition </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Kangyao Huang</b>, 
+                    <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                    <a style="color: #999;">Xiangyang Ji</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon>, 
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em>IEEE International Conference on
+                        Robotics and Automation (ICRA) 2024 </em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%"> 
+                <div class="dropdown">
+                    <span></span><a href="https://github.com/KJaebye/Multiagent-Race" target="_blank">Project Page</a>
+                </div>
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            It is common for us to feel pressure in a competi- tion environment, 
+                            which arises from the desire to obtain success comparing with other individuals or opponents. 
+                            Although we might get anxious under the pressure, it could also be a drive for us to stimulate our 
+                            potentials to the best in order to keep up with others. Inspired by this, we propose a competitive 
+                            learning framework which is able to help individual robot to acquire knowledge from the competition, 
+                            fully stimulating its dynamics potential in the race. Specifically, the competition information among 
+                            competitors is introduced as the additional auxiliary signal to learn advantaged actions. We further 
+                            build a Multiagent-Race environment, and extensive experiments are conducted, demonstrating that robots 
+                            trained in competitive environments outperform ones that are trained with SoTA algorithms in single 
+                            robot environment.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="https://github.com/KJaebye/Multiagent-Race" target="_blank">Code</a></div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Video</a></div>
+            </aside>
+        </div>
+
         <!-- 2023aim  -->
         <div onmouseout="aim_stop()" onmouseover="aim_start()">	  
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
-                    <div class="two" id="idr_image">
+                    <div class="two" id="aim_image">
                         <video  width="100%" height="100%" muted="" autoplay="" loop="">
                             <source src="material/2023aim.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -76,11 +140,11 @@
                 </div>
                 <script type="text/javascript">
                     function aim_start() {
-                    document.getElementById('idr_image').style.opacity = "1";
+                    document.getElementById('aim_image').style.opacity = "1";
                     }
 
                     function aim_stop() {
-                    document.getElementById('idr_image').style.opacity = "0";
+                    document.getElementById('aim_image').style.opacity = "0";
                     }
                     aim_stop()
                 </script>
@@ -551,10 +615,10 @@
                     <a style="font-style: italic;font-size: 12px;" href="https://www.robosense.cn/index">@RoboSense Co., Ltd.</a>
                 </h3>
                 <h3 class="sectionContentSubTitle"> 
+                    Project Principal:
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
                     Project Technical Leader:
                     <b>Kangyao Huang</b>
-                    Project Manager:
-                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
                     Director:
                     <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,                    
                 </h3>
