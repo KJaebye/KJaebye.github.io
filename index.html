@@ -88,7 +88,7 @@
             <h2 class="sectionContentTitle"> emNavi (Embodied Navigation) </h2>
                 <h3 class="sectionContentSubTitle"> 
                     <b>Work with</b> 
-                    <a style="color: #999;">Colleagues </a><a style="font-style: italic;">@TinyTech Co., Ltd. (超微智导)</a>
+                    <a style="color: #999;">Colleagues </a><a style="font-style: italic;">@超微智导技术(北京)有限公司</a>
                 </h3>
                 <p style="font-size: 12px;">Brief: <b>emNavi</b> is an open-source project derived from "Embodied Navigation". 
                     The vision of emNavi is to re-construct and optimize the navigation-related SoTA (state of the art) 
@@ -116,6 +116,70 @@
         <h2 class="sectionTitle">Selected Publications</h2>
         <hr class="sectionTitleRule">
         <hr class="sectionTitleRule2">
+
+        <!-- d_hrl-->
+        <div onmouseout="d_hrl_stop()" onmouseover="d_hrl_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="d_hrl_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/2024dhrl.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/2024dhrl.png" width="100%" height="100%">
+                </div>
+                <script type="text/javascript">
+                    function d_hrl_start() {
+                    document.getElementById('d_hrl_image').style.opacity = "1";
+                    }
+
+                    function d_hrl_stop() {
+                    document.getElementById('d_hrl_image').style.opacity = "0";
+                    }
+                    d_hrl_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Learning a Distributed Hierarchical Locomotion Controller for Embodied Cooperation </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <a>Chuye Hong*</a>,
+                    <b>Kangyao Huang*</b>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon> 
+                    <a style="font-size: 12px;color: rgb(247, 121, 175);">
+                        <b>*</b> contribute equally to this work
+                    </a>
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em>Conference on Robot Learning (CoRL) 2024</em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%">
+                <div class="dropdown">
+                    <span></span><a href="https://d-hrl.github.io/" target="_blank">Project Page</a>
+                </div>
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                            In this work, we propose a distributed hierarchical locomotion control strategy for whole-body 
+                            cooperation and demonstrate the potential for migration into large numbers of agents. 
+                            Our method utilizes a hierarchical structure to break down complex tasks into smaller, 
+                            manageable sub-tasks. By incorporating spatiotemporal continuity features, we establish the 
+                            sequential logic necessary for causal inference and cooperative behaviour in sequential tasks, 
+                            thereby facilitating efficient and coordinated control strategies. Through training within this 
+                            framework, we demonstrate enhanced adaptability and cooperation, leading to superior performance in
+                             task completion compared to the original methods. Moreover, we construct a set of environments as 
+                             the benchmark for embodied cooperation.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2407.06499" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
+                <div class="dropdown"><span></span><a href="https://d-hrl.github.io/" target="_blank">Video</a></div>
+            </aside>
+        </div>
+        <br>
 
         <!-- 2024ijcai-->
         <div onmouseout="ijcai24_stop()" onmouseover="ijcai24_start()">	  
@@ -147,7 +211,7 @@
                     <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
                     <a style="color: #999;">Xiangyang Ji</a>, 
-                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon> 
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <em>International Joint Conference
@@ -211,7 +275,7 @@
                     <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
                     <a style="color: #999;">Xiangyang Ji</a>, 
-                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon>, 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon> 
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <em>IEEE International Conference on
@@ -278,7 +342,7 @@
                     <a style="color: #999;">Xiaoyu Wang</a>, 
                     <a style="color: #999;">Dafeng Jin</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
-                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <em>IEEE/ASME International Conference on Advanced Intelligent Mechatronics(AIM) 2023 </em>
@@ -342,7 +406,7 @@
                     <a style="color: #999;">Ziqi Zhao</a>, 
                     <a style="color: #999;">Jingwei Li</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
-                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <em> arXiv </em>
@@ -473,7 +537,7 @@
                     <a href="https://www.cae.cn/cae/html/main/colys/00679747.html" target="_blank">Deyi Li</a>,
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=gVuaz7QAAAAJ" target="_blank">Yuanhao Huang</a>, 
-                    <b>Kangyao Huang</b>, 
+                    <b>Kangyao Huang</b>
                     <!-- <a href="https://scholar.google.com.hk/citations?user=pKCG3T8AAAAJ" target="_blank">Jianxi Luo</a>, -->
                 </h3>
                 <h3 class="sectionContentSubTitle">
@@ -534,7 +598,7 @@
                     <a href="https://scholar.google.com.hk/citations?user=kLTnwAsAAAAJ" target="_blank">Li Wang</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=pKCG3T8AAAAJ" target="_blank">Jianxi Luo</a>, 
-                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <em> IEEE Transactions on Intelligent Vehicles, 2022</em> 
@@ -592,7 +656,7 @@
                     <b>Kangyao Huang</b>, 
                     <a href="https://scholar.google.com.hk/citations?user=j63_EA0AAAAJ" target="_blank">Jingyu Chen</a>, 
                     <a href="https://scholar.google.com.hk/citations?user=W7ePGWYAAAAJ" target="_blank">John Oyekan</a>, 
-                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=0Q7pN4cAAAAJ" target="_blank">Xinyu Zhang</a> 
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <em> Chinese Intelligent Automation Conference (CIAC) 2021 </em>
@@ -644,7 +708,7 @@
                 <h3 class="sectionContentSubTitle"> 
                     <b>Kangyao Huang</b>, 
                     <a href="https://scholar.google.com.hk/citations?user=j63_EA0AAAAJ" target="_blank">Jingyu Chen</a>, 
-                    <a href="https://scholar.google.com.hk/citations?user=W7ePGWYAAAAJ" target="_blank">John Oyekan</a>, 
+                    <a href="https://scholar.google.com.hk/citations?user=W7ePGWYAAAAJ" target="_blank">John Oyekan</a> 
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <em>Swarm and Evolutionary Computation, 2021 </em>
@@ -741,7 +805,7 @@
                     Project Technical Leader:
                     <b>Kangyao Huang</b>,
                     Director:
-                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>,                    
+                    <a href="https://www.tsinghua.edu.cn/info/1166/93890.htm" target="_blank">Jun Li</a>                    
                 </h3>
                 <h3 class="sectionContentSubTitle">
                     <a style="font-size: 12px;">Other participants: </a>
