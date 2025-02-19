@@ -102,7 +102,10 @@
                 <span></span><a href="https://github.com/emNavi" target="_blank">Project Page</a>
             </div>
             <div class="dropdown">
-                <span></span><a href="https://x152b.readthedocs.io/en/latest/" target="_blank">X152b doc</a>
+                <span></span><a href="https://emnavi.tech/droneKit/" target="_blank">X152b doc</a>
+            </div>
+            <div class="dropdown">
+                <span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Sim2Real</a>
             </div>
         </aside>
     </div>
@@ -116,6 +119,83 @@
         <h2 class="sectionTitle">Selected Publications</h2>
         <hr class="sectionTitleRule">
         <hr class="sectionTitleRule2">
+
+        <!-- airgym-->
+        <div onmouseout="airgym_stop()" onmouseover="airgym_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="airgym_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/airgym.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/airgym.jpg" width="100%" height="100%">
+                </div>
+                <script type="text/javascript">
+                    function airgym_start() {
+                    document.getElementById('airgym_image').style.opacity = "1";
+                    }
+
+                    function airgym_stop() {
+                    document.getElementById('airgym_image').style.opacity = "0";
+                    }
+                    airgym_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Demonstrating Sim-to-Real of Reinforcement Learning for Quadrotor System in the Wild </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Kangyao Huang*</b>, 
+                    <a>Hao Wang*</a>,
+                    <a>Yu Luo</a>,
+                    <a>Jingyu Chen</a>,
+                    <a>Jintao Chen</a>,
+                    <a>Xiangkui Zhang</a>,
+                    <a>Xiangyang Ji</a>,
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon> 
+                    <a style="font-size: 12px;color: rgb(247, 121, 175);">
+                        <b>*</b> contribute equally to this work
+                    </a>
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> Technical Report</em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%">
+                <div class="dropdown">
+                    <span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Project Page</a>
+                </div>
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;">
+                        The deployment of end-to-end learning-based methods for quadrotor control in unstructured outdoor 
+                        environments poses significant challenges, including the scarcity of reliable real-world observations, 
+                        stringent requirements for onboard real-time inference, and the sim-to-real gap inherent to dynamic, 
+                        noisy settings. Current works have made a great breakthrough in applying the learning-based method to 
+                        the end-to-end control of drones, but rarely mention the infrastructure system from simulation to 
+                        reality. This makes it challenging to reproduce or generalize many research outcomes in real-world 
+                        scenarios, thereby limiting the practical application of learning-based approaches. To bridge this 
+                        gap, we propose a system that enables the seamless transfer of end-to-end DRL policies. Our system 
+                        is built on the open-sourced community and strictly aligned with the real-world system. Besides, we 
+                        further introduce an intermediate software layer comprising AirGym-Real and control for gym, which 
+                        harmonize sensor data, actuator dynamics, and control interfaces between simulated and real-world 
+                        domains. It is vital that we utilize a set of skills, including domain randomization, hover throttle 
+                        alignment, and hierarchical state processing, to enable the seamless policy transfer. Through 
+                        extensive empirical validation, we demonstrate robust outdoor flight performance under real-world 
+                        perturbations, including wind gusts and sensor noise, and systematically analyze critical factors—such 
+                        as domain randomization and observational fidelity—that underpin success- ful zero-shot transfer. 
+                        Details can be found from our website https://emnavi.tech/AirGym/.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
+                <div class="dropdown"><span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Video</a></div>
+            </aside>
+        </div>
+        <br>
 
         <!-- d_hrl-->
         <div onmouseout="d_hrl_stop()" onmouseover="d_hrl_start()">	  
