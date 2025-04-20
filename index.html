@@ -180,7 +180,7 @@
                 </script>
             </div>
             <section class="section2Content">
-                <h2 class="sectionContentTitle"> Demonstrating Sim-to-Real of Reinforcement Learning for Quadrotor System in the Wild </h2>
+                <h2 class="sectionContentTitle"> A General Infrastructure and Workflow for Quadrotor Deep Reinforcement Learning and Reality Deployment </h2>
                 <h3 class="sectionContentSubTitle"> 
                     <b>Kangyao Huang*</b>, 
                     <a>Hao Wang*</a>,
@@ -195,7 +195,7 @@
                     </a>
                 </h3>
                 <h3 class="sectionContentSubTitle">
-                    <em> Technical Report</em>
+                    <em> arXiv</em>
                 </h3>
             </section>
             <aside class="externalResourcesNav" style="margin-top:0%">
@@ -205,23 +205,7 @@
                 <div class="dropdown"> <span>Abstract</span>
                     <div class="dropdown-content">
                         <p style="text-align:left;">
-                        The deployment of end-to-end learning-based methods for quadrotor control in unstructured outdoor 
-                        environments poses significant challenges, including the scarcity of reliable real-world observations, 
-                        stringent requirements for onboard real-time inference, and the sim-to-real gap inherent to dynamic, 
-                        noisy settings. Current works have made a great breakthrough in applying the learning-based method to 
-                        the end-to-end control of drones, but rarely mention the infrastructure system from simulation to 
-                        reality. This makes it challenging to reproduce or generalize many research outcomes in real-world 
-                        scenarios, thereby limiting the practical application of learning-based approaches. To bridge this 
-                        gap, we propose a system that enables the seamless transfer of end-to-end DRL policies. Our system 
-                        is built on the open-sourced community and strictly aligned with the real-world system. Besides, we 
-                        further introduce an intermediate software layer comprising AirGym-Real and control for gym, which 
-                        harmonize sensor data, actuator dynamics, and control interfaces between simulated and real-world 
-                        domains. It is vital that we utilize a set of skills, including domain randomization, hover throttle 
-                        alignment, and hierarchical state processing, to enable the seamless policy transfer. Through 
-                        extensive empirical validation, we demonstrate robust outdoor flight performance under real-world 
-                        perturbations, including wind gusts and sensor noise, and systematically analyze critical factors—such 
-                        as domain randomization and observational fidelity—that underpin success- ful zero-shot transfer. 
-                        Details can be found from our website https://emnavi.tech/AirGym/.
+                            Deploying robot learning methods to a quadrotor in unstructured outdoor environments is an exciting task. Quadrotors operating in real-world environments by learning-based methods encounter several challenges: a large amount of simulator generated data required for training, strict demands for real-time processing onboard, and the sim-to-real gap caused by dynamic and noisy conditions. Current works have made a great breakthrough in applying learning-based methods to end-to-end control of quadrotors, but rarely mention the infrastructure system training from scratch and deploying to reality, which makes it difficult to reproduce methods and applications. To bridge this gap, we propose a platform that enables the seamless transfer of end-to-end deep reinforcement learning (DRL) policies. We integrate the training environment, flight dynamics control, DRL algorithms, the MAVROS middleware stack, and hardware into a comprehensive workflow and architecture that enables quadrotors' policies to be trained from scratch to real-world deployment in several minutes. Our platform provides rich types of environments including hovering, dynamic obstacle avoidance, trajectory tracking, balloon hitting, and planning in unknown environments, as a physical experiment benchmark. Through extensive empirical validation, we demonstrate the efficiency of proposed sim-to-real platform, and robust outdoor flight performance under real-world perturbations. Details can be found from our website https://emnavi.tech/AirGym/.
 
                         </p>
                     </div>
