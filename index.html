@@ -15,16 +15,16 @@
 <!-- Header content -->
 <header>
     <div class="profilePhoto"> 
-        <img src="profile/hky_avatar.jpg" alt="sample" width="240">
-        <!-- <img src="profile/hky.jpg" alt="sample" width="270"> -->
-        <!-- <img src="profile/hky_life.jpg" alt="sample" width="270"> -->
+        <img src="profile/hky_avatar.jpg" alt="sample" width="200">
+        <!-- <img src="profile/hky.jpg" alt="sample" width="200"> -->
+        <!-- <img src="profile/hky_life.jpg" alt="sample" width="200"> -->
     </div>
     <!-- Identity details -->
     <section class="profileHeader">
         <h1 style="line-height: 30px;font-size: 28px;margin-bottom: auto;">Kangyao Huang&emsp;&emsp;<img src="profile/name.png" width="80" style="margin-bottom: -5px;"></h1>
         <h3>PhD Candidate | AI Researcher | Aerospace & Robotics Engineer</h3>
         <hr>
-        <p style="font-size: 14px;margin-bottom: auto;">My name is Kangyao Huang (黄康尧 in Chinese). I am an AI researcher and aerospace engineer from China. Currently, I am pursuing a PhD degree in Computer Science at Tsinghua University(THU) under the supervision of Prof. Huaping Liu.
+        <p style="line-height: 15px;font-size: 12px;margin-bottom: auto;">My name is Kangyao Huang (黄康尧 in Chinese). I am an AI researcher and aerospace engineer from China. Currently, I am pursuing a PhD degree in Computer Science at Tsinghua University(THU) under the supervision of Prof. Huaping Liu.
             I also hold an MRes degree in Control from ACSE, the University of Sheffield(UoS), UK., supervised by Prof. John Oyekan, and a BEng degree in Aerospace from Northwestern Polytechnical
             University(NWPU), China. I had several years start-up experience in aerospace and automation industrial sectors, serving as a UAV designer 
             and technical director.
@@ -150,10 +150,75 @@
 
 </section>
 
+<section class="mainContent"> 
+    <section class="section2">
+        <h2 class="sectionTitle">Book</h2>
+        <!-- <hr class="sectionTitleRule"> -->
+        <hr class="sectionTitleRule2">
+
+        <!-- Book Content -->
+        <div class="book-container">
+            <div class="book-cover">
+                <img src="material/book_springer.png" alt="cover" class="book-image">
+            </div>
+            <div class="book-info"> 
+                <h3 class="sectionContentTitle">
+                    <a href="https://link.springer.com/book/10.1007/978-981-96-5871-8">Embodied Multi-Agent Systems: Perception, Action, and Learning</a>
+                </h3>
+                <h3 class="sectionContentSubTitle" style="font-size: 11px;"> 
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>,
+                    <a href="" target="_blank">Xinzhu Liu</a>,
+                    <b>Kangyao Huang</b>, 
+                    <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>
+                </h3>
+                <p class="book-summary;" style="font-size: 11px;">
+                    This book focuses on active perception and interactive learning for embodied multi-agent systems. The remarkable reasoning, perception, and decision-making capabilities demonstrated by LLM in recent years have brought significant opportunities for the exploration of artificial general intelligence (AGI). This results in the development of increasingly larger models and a higher consumption of data. The ultimate goal is to achieve AGI through a unified brain model. However, when it comes to embodied agents, this strategy encounters considerable challenges due to the variety in morphology and function among these agents. It is neither feasible nor desirable to expect all embodied agents to conform to a single morphology. Instead, we should embrace the principles of biodiversity, promoting the existence, collaboration, and interaction of various forms. This recognition has motivated our research into embodied multi-agent systems. During this process, we have realized that active perception, along with the interactive learning capabilities that stem from it, plays a crucial role in fostering collaboration and synergy among multiple embodied agents.
+                </p>
+                <p style="font-size: 10px;color: rgba(153, 1, 150, 0.579);">
+                    We would like to thank Prof. Angelo Cangelosi, Prof. David Hsu, Prof. John Aloimonos who provide lots of support. We would like to express our gratitude to Dr. Hongbo Li from Geek+ and Dr. Tianlei Zhang from TrunkTech for their invaluable support in our study of embodied multi-agent collaboration. Additionally, we would like to express our sincere gratitude to Chenxu Wang, Xinghang Li, Juan Wang, Peiyan Li, Pingcheng Jian, and Chuye Hong for their significant assistance in preparing the figures and proofreading the book.
+                </p>
+            </div>
+        </div>
+
+    </section>
+</section>
+<style>
+    .book-container {
+        display: flex;
+        margin-top: 20px;
+        gap: 30px;
+    }
+    
+    .book-cover {
+        flex: 0 0 160px;
+    }
+    
+    .book-image {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .book-info {
+        flex: 1;
+    }
+    
+    .book-title {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+    
+    .book-summary {
+        line-height: 1.6;
+        color: #555;
+    }
+</style>
+
 <!-- content -->
 <section class="mainContent"> 
     <section class="section2">
-        <h2 class="sectionTitle">Selected Publications</h2>
+        <h2 class="sectionTitle">Publications</h2>
         <hr class="sectionTitleRule">
         <hr class="sectionTitleRule2">
 
