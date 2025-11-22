@@ -224,6 +224,60 @@
         <!-- <hr class="sectionTitleRule"> -->
         <hr class="sectionTitleRule2">
 
+        <!-- ral compet drone-->
+        <div onmouseout="competdrone_stop()" onmouseover="competdrone_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="competdrone_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/ral-compet-drone.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/ral-compet-drone.png" width="100%" height="100%">
+                </div>
+                <script type="text/javascript">
+                    function competdrone_start() {
+                    document.getElementById('competdrone_image').style.opacity = "1";
+                    }
+
+                    function competdrone_stop() {
+                    document.getElementById('competdrone_image').style.opacity = "0";
+                    }
+                    competdrone_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Competitive Learning for Autonomous Flight </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Kangyao Huang*</b>, 
+                    <a>Hao Wang*</a>,
+                    <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>, 
+                    <a>Xiangkui Zhang</a>,
+                    <a>Xiangyang Ji</a>,
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon><br>
+                    <a style="font-size: 12px;color: rgb(247, 121, 175);">
+                        <b>*</b> contribute equally to this work
+                    </a>
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> IEEE Robotics and Automation Letters (<b>RA-L</b>) 2025</em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%">
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;font-size: 10px;">
+                            The competition among a swarm often brings about astonishing potential beyond the ordinary. This paper proposes an approach for enhancing autonomous obstacle avoidance in aerial robots through competitive training. By constructing a multi-agent environment, we introduce competition between individuals as a form of comparative learning, stimulating more robust end-to-end flight strategies. Unlike traditional single-agent reinforcement learning (RL) methods, our framework leverages competitive interactions among virtual agents to generate richer training signals, leading to superior performance. Experimental results demonstrate that policies trained in this competitive multi-agent setting outperform those derived from single-drone simulation-based RL, achieving higher efficiency and adaptability in complex environments. Furthermore, ablation studies are conducted to validate the effectiveness and limitations of competitive learning. This work highlights the potential of competitive learning paradigms in advancing autonomous aerial robot navigation.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
+            </aside>
+        </div>
+        <br>
+
         <!--nature review ee-->
         <div onmouseout="nree_stop()" onmouseover="nree_start()">	  
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
@@ -1242,6 +1296,12 @@
                 <h3 class="sectionContentSubTitle" style="font-weight: bold;font-style: italic;">2024,&ensp;</h3>
                 <h3 class="sectionContentSubTitle">
                     Yang Huiyan Scholarship at Tsinghua University（惠妍英才奖学金-清华大学）
+                </h3>
+            </group>
+            <group>
+                <h3 class="sectionContentSubTitle" style="font-weight: bold;font-style: italic;">2025,&ensp;</h3>
+                <h3 class="sectionContentSubTitle">
+                    HuangPu Scholarship at Tsinghua University（黄埔英才奖学金-清华大学）
                 </h3>
             </group>
             <group>
