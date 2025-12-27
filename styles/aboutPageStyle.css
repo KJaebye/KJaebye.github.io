@@ -120,11 +120,24 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	font-size: 13px;
 	font-weight: 700;
 }
+.section2 .sectionContentTitleSmall {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 12px;
+	font-weight: 700;
+}
 .section2 .sectionContentSubTitle {
 	font-family: 'Montserrat', sans-serif;
 	color: rgba(68,67,67,1.00);
-	font-size: 11px;
+	font-size: 9px;
 	font-weight: 400;
+}
+.section2 .sectionContentSubTitleSmall {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(68,67,67,1.00);
+	font-size: 9px;
+	font-weight: 400;
+	line-height: 0.6;
 }
 .section2 p {
 	font-family: 'Montserrat', sans-serif;
