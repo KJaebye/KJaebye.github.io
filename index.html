@@ -321,7 +321,7 @@
                 <div class="one">
                     <div class="two" id="competdrone_image">
                         <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/ral-compet-drone.mp4" type="video/mp4">
+                            <source src="material/ral-compet-drone_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -347,7 +347,7 @@
                     <a>Xiangkui Zhang</a>,
                     <a>Xiangyang Ji</a>,
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon><br>
-                    <a style="font-size: 12px;color: rgb(247, 121, 175);">
+                    <a style="font-size: 10px;color: rgb(247, 121, 175);">
                         <b>*</b> contribute equally to this work
                     </a>
                 </h3>
@@ -453,7 +453,8 @@
                     <a>Xiangkui Zhang</a>,
                     <a>Xiangyang Ji</a>,
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon> 
-                    <a style="font-size: 12px;color: rgb(247, 121, 175);">
+                    <br>
+                    <a style="font-size: 10px;color: rgb(247, 121, 175);">
                         <b>*</b> contribute equally to this work
                     </a>
                 </h3>
@@ -509,7 +510,8 @@
                     <a>Chuye Hong*</a>,
                     <b>Kangyao Huang*</b>, 
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon> 
-                    <a style="font-size: 12px;color: rgb(247, 121, 175);">
+                    <br>
+                    <a style="font-size: 10px;color: rgb(247, 121, 175);">
                         <b>*</b> contribute equally to this work
                     </a>
                 </h3>
@@ -615,7 +617,7 @@
                 <div class="one">
                     <div class="two" id="icra24_image">
                         <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2024icra_1.mp4" type="video/mp4">
+                            <source src="material/2024icra_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -1010,7 +1012,7 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <img src="material/2021CIAC0.jpg" width="100%">
+                    <img src="material/2021CIAC0.png" width="100%">
                 </div>
                 <script type="text/javascript">
                     function ciac_start() {
@@ -1154,7 +1156,7 @@
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"><img src="material/logo1.png" alt="emNavi" style="height: 30px; vertical-align: middle;"></h2>
-                    <p style="font-size: 12px;"><b>emNavi</b> derives from "Embodied Navigation". 
+                    <p style="font-size: 10px;"><b>emNavi</b> derives from "Embodied Navigation". 
                         The vision of emNavi is to make navigation more intelligent. Besides, emNavi is an open-sourced project that re-construct and optimize the navigation-related SoTA (state of the art) 
                         algorithms and apply them on robots, especially aerial robots, to promote the implementation of Embodied AI 
                         on mobile robots. </p>
@@ -1172,6 +1174,40 @@
                     <span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Sim2Real</a>
                 </div>
             </aside>
+        </div>
+        <br>
+
+        <!-- vps  -->
+        <div onmouseout="vps_stop()" onmouseover="vps_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="vps_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/vps_2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/vps.png" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function vps_start() {
+                    document.getElementById('vps_image').style.opacity = "1";
+                    }
+
+                    function vps_stop() {
+                    document.getElementById('vps_image').style.opacity = "0";
+                    }
+                    vps_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> GhostLoc: Geospatial High-precise Optical System for Tactical Localization</h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Work with</b> 
+                    <a style="color: #999;"> teammates </a><a style="font-style: italic;">@emNavi</a>: Kai Tang (CV), Hao Wang (System), Wantong Qin (Design), Tao Peng (Hardware)
+                </h3>
+                <p style="font-size: 10px;"><b>Brief:</b> GhostLoc is a compact, high-altitude visual positioning system that achieves GPS-level precision in denied environments by fusing Visual-Inertial Odometry (VIO) with a Visual Positioning System (VPS). Requiring only a single camera, IMU, and barometer, its lightweight, palm-sized design provides smooth, 6-DoF pose data at over 15 Hz with meter-level accuracy, enabling robust navigation for various aerial platforms without relying on GNSS signals. We integrated XFeat, LightGlue, and VINS-fusion in one rubust framework which is running on a lightweight  We tested the system on DJI Matric 350 platform for a long duration flight over 5km and 300~800m height. Kai Tang and Hao Wang are main contributors for this work.</p>
+            </section>
         </div>
         <br>
 
@@ -1314,8 +1350,42 @@
         </div>
         <br>
 
+        <!-- evtol tracking  -->
+        <div onmouseout="evtol_stop()" onmouseover="evtol_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="evtol_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/evtol_tracking.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/evtol_tracking.png" width="100%">
+                </div>
+                <script type="text/javascript">
+                    function evtol_start() {
+                    document.getElementById('evtol_image').style.opacity = "1";
+                    }
+
+                    function evtol_stop() {
+                    document.getElementById('evtol_image').style.opacity = "0";
+                    }
+                    evtol_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Auto-Patrolling eVTOL UAV and Tracking System</h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <b>Work with</b> 
+                    <a style="color: #999;">Colleagues </a><a style="font-style: italic;">@Bingo Intelligence Co., Ltd.</a>
+                </h3>
+                <p style="font-size: 10px;"><b>Brief:</b> This project developed an Auto-Patrolling eVTOL UAV and Tracking System, integrating the vertical takeoff and landing capability of an electric Vertical Take-Off and Landing (eVTOL) aircraft with advanced computer vision for autonomous detection and real-time tracking of targets, enabling automated surveillance and monitoring missions in dynamic environments such as security, traffic, and infrastructure inspection. For this purpose, we <b>designed and developed this UAV entirely from scratch</b>, encompassing its aerodynamic profile, airframe structure and composite materials, flight control systems, and cv detection capabilities based on third party optical device.</p>
+            </section>
+        </div>
+        <br>
+
         <!-- auto-patrolling  -->
-        <div onmouseout="patrolling_stop()" onmouseover="patrolling_start()">	  
+        <!-- <div onmouseout="patrolling_stop()" onmouseover="patrolling_start()">	  
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="patrolling_image">
@@ -1347,7 +1417,7 @@
                     system for airports. This project encompassed the overall design of the airport system and the design and production of electromechanical controls. We prioritized the autonomous inspection functionality of the drones. Through a comprehensive approach balancing airport safety and efficiency, we devised a complete system including structural design of the drones, development of electromechanical control systems, and optimization of inspection algorithms. This system not only enables comprehensive inspection of airport facilities but also autonomously responds to and alerts to anomalies.</p>
             </section>
         </div>
-        <br>
+        <br> -->
         
         <!-- oil-drone  -->
         <div onmouseout="oil_stop()" onmouseover="oil_start()">
