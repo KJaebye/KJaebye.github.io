@@ -179,6 +179,57 @@
         <!-- <hr class="sectionTitleRule"> -->
         <hr class="sectionTitleRule2">
 
+        <!-- diffmuscle -->
+        <div onmouseout="diffmuscle_stop()" onmouseover="diffmuscle_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="diffmuscle_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/diffmuscle.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/diffmuscle.png" width="100%" height="100%">
+                </div>
+                <script type="text/javascript">
+                    function diffmuscle_start() {
+                    document.getElementById('diffmuscle_image').style.opacity = "1";
+                    }
+
+                    function diffmuscle_stop() {
+                    document.getElementById('diffmuscle_image').style.opacity = "0";
+                    }
+                    diffmuscle_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> Diff-Muscle: Efficient Learning for Musculoskeletal Robotic Table Tennis </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <a>Wentao Zhao</a>,
+                    <a>Jun Guo</a>,
+                    <b>Kangyao Huang</b>, 
+                    <a>Xin Liu</a>,
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon><br>
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> arXiv</em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%">
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;font-size: 10px;">
+                            Musculoskeletal robots provide superior advantages in flexibility and dexterity, positioning them as a promising frontier towards embodied intelligence. However, current research is largely confined to relative simple tasks, restricting the exploration of their full potential in multi-segment coordination. Furthermore, efficient learning remains a challenge, primarily due to the high-dimensional action space and inherent overactuated structures. To address these challenges, we propose Diff-Muscle, a musculoskeletal robot control algorithm that leverages differential flatness to reformulate policy learning from the redundant muscle-activation space into a significantly lower-dimensional joint space. Furthermore, we utilize the highly dynamic robotic table tennis task to evaluate our algorithm. Specifically, we propose a hierarchical reinforcement learning framework that integrates a Kinematics-based Muscle Actuation Controller (K-MAC) with high-level trajectory planning, enabling a musculoskeletal robot to perform dexterous and precise rallies. Experimental results demonstrate that Diff-Muscle significantly outperforms state-of-the-art baselines in success rates while maintaining minimal muscle activation. Notably, the proposed framework successfully enables the musculoskeletal robots to achieve continuous rallies in a challenging dual-robot setting.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2603.08617" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
+            </aside>
+        </div>
+        <br>
+        <br>
+
         <!-- longfly -->
         <div onmouseout="longfly_stop()" onmouseover="longfly_start()">	  
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
