@@ -179,6 +179,62 @@
         <!-- <hr class="sectionTitleRule"> -->
         <hr class="sectionTitleRule2">
 
+        <!-- spatialfly -->
+        <div onmouseout="spatialfly_stop()" onmouseover="spatialfly_start()">	  
+            <div class="sectionContent" style="padding:0px;vertical-align:middle">
+                <div class="one">
+                    <div class="two" id="spatialfly_image">
+                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
+                            <source src="material/spatialfly.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <img src="material/spatialfly.png" width="100%" height="100%">
+                </div>
+                <script type="text/javascript">
+                    function spatialfly_start() {
+                    document.getElementById('spatialfly_image').style.opacity = "1";
+                    }
+
+                    function spatialfly_stop() {
+                    document.getElementById('spatialfly_image').style.opacity = "0";
+                    }
+                    spatialfly_stop()
+                </script>
+            </div>
+            <section class="section2Content">
+                <h2 class="sectionContentTitle"> SpatialFly: Geometry-Guided Representation Alignment for UAV Vision-and-Language Navigation in Urban Environments </h2>
+                <h3 class="sectionContentSubTitle"> 
+                    <a>Wen Jiang</a>,
+                    <b>Kangyao Huang</b>, 
+                    <a>Li Wang</a>,
+                    <a>Wang Xu</a>,
+                    <a>Wei Fan</a>,
+                    <a>Jinyuan Liu</a>,
+                    <a>Shaoyu Liu</a>,
+                    <a>Hanfang Liang</a>
+                    <a>Hongwei Duan</a>,
+                    <a>Bin Xu</a>,
+                    <a>Xiangyang Ji</a>
+                </h3>
+                <h3 class="sectionContentSubTitle">
+                    <em> arXiv</em>
+                </h3>
+            </section>
+            <aside class="externalResourcesNav" style="margin-top:0%">
+                <div class="dropdown"> <span>Abstract</span>
+                    <div class="dropdown-content">
+                        <p style="text-align:left;font-size: 10px;">
+                            UAVs play an important role in applications such as autonomous exploration, disaster response, and infrastructure inspection. However, UAV VLN in complex 3D environments remains challenging. A key difficulty is the structural representation mismatch between 2D visual perception and the 3D trajectory decision space, which limits spatial reasoning. To this end, we propose SpatialFly, a geometry-guided spatial representation framework for UAV VLN. Operating on RGB observations without explicit 3D reconstruction, SpatialFly introduces a geometryguided 2D representation alignment mechanism. Specifically, the geometric prior injection module injects global structural cues into 2D semantic tokens to provide scene-level geometric guidance. The geometry-aware reparameterization module then aligns 2D semantic tokens with 3D geometric tokens through cross-modal attention, followed by gated residual fusion to preserve semantic discrimination. Experimental results show that SpatialFly consistently outperforms state-of-the-art UAV VLN baselines across both seen and unseen environments, reducing NE by 4.03m and improving SR by 1.27% over the strongest baseline on the unseen Full split. Additional trajectory-level analysis shows that SpatialFly produces trajectories with better path alignment and smoother, more stable motion.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2603.21046" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
+            </aside>
+        </div>
+        <br>
+
         <!-- diffmuscle -->
         <div onmouseout="diffmuscle_stop()" onmouseover="diffmuscle_start()">	  
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
@@ -330,14 +386,14 @@
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Towards Ultrafast Depth Sensing Via Active Event-based Stereo Vision </h2>
                 <h3 class="sectionContentSubTitle"> 
-                    <a>Jianing Li</a>,
+                    <a href="https://scholar.google.com.hk/citations?user=xrYnfwcAAAAJ&hl=zh-CN&oi=sra" target="_blank">Jianing Li</a>,
                     <a>Yunjian Zhang</a>,
                     <a>Haiqian Han</a>,
                     <b>Kangyao Huang</b>, 
-                    <a>Xiangyang Ji</a>
+                    <a>Xiangyang Ji</a><ion-icon name="mail-outline"></ion-icon><br>
                 </h3>
                 <h3 class="sectionContentSubTitle">
-                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>T-PAMI</b>), 2026</em>
+                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>T-PAMI</b>), 2026</em> <a style="color: rgb(247, 121, 175);font-weight: bold;font-style: oblique;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">IF: 18.6</a>
                 </h3>
             </section>
             <aside class="externalResourcesNav" style="margin-top:0%">
@@ -361,7 +417,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="dropdown"><span></span><a href="" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="https://ieeexplore.ieee.org/abstract/document/11435635/" target="_blank">Paper</a></div>
                 <div class="dropdown"><span></span><a href="https://github.com/jianing-li/active_event_based_stereo" target="_blank">Code</a></div>
             </aside>
         </div>
@@ -404,7 +460,7 @@
                     </a>
                 </h3>
                 <h3 class="sectionContentSubTitle">
-                    <em> IEEE Robotics and Automation Letters (<b>RA-L</b>) 2025</em>
+                    <em> IEEE Robotics and Automation Letters (<b>RA-L</b>) 2025</em> <a style="color: rgb(247, 121, 175);font-weight: bold;font-style: oblique;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">IF: 5.3</a>
                 </h3>
             </section>
             <aside class="externalResourcesNav" style="margin-top:0%">
