@@ -154,6 +154,10 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .mainContent {
 	display: block;
 }
+.mainContent .section2 > div {
+	clear: both;
+	display: flow-root;
+}
 .mainContent .externalResourcesNav .externalResources {
 	background-color: rgba(208,207,207,1.00);
 	display: inline-block;
