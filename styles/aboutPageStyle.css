@@ -160,6 +160,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .mainContent .section2 > .book-container {
 	display: flex;
+	flex-flow: row nowrap;
 	align-items: flex-start;
 	gap: 30px;
 	margin-top: 20px;
@@ -349,8 +350,9 @@ header .socialNetworkNavBar .socialNetworkNav {
 	text-align: center;
 }
 .mainContent .section2 > .book-container {
-	flex-direction: column;
-	align-items: center;
+	/* Keep a narrow desktop window (or browser zoom) in the desktop layout. */
+	flex-direction: row;
+	align-items: flex-start;
 	text-align: left;
 }
 .book-info {
@@ -634,6 +636,15 @@ footer .footerNote {
 	margin-right: 3%;
 	font-family: 'Montserrat', sans-serif;
 }
+}
+
+/* Stack the book only on an actual touch-screen phone. A desktop browser can
+   otherwise enter the mobile breakpoint because of window size or zoom. */
+@media only screen and (max-width: 480px) and (pointer: coarse) {
+	.mainContent .section2 > .book-container {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .one {
