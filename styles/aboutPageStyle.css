@@ -1,12 +1,5 @@
 @charset "utf-8";
 /* Global Styles */
-@font-face {
-	font-family: 'Montserrat';
-	src: 'font/Montserrat-Regular.ttf';
-	/* src: 'font/Montserrat.ttf'; */
-	/* src: 'font/Times New Roman.ttf'; */
-}
-
 body {
 	margin-left: auto;
 	margin-right: auto;
@@ -664,4 +657,100 @@ footer .footerNote {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+/* Preview posters remain visible until video playback actually starts. */
+.video-card .two { opacity: 0; width: 100%; pointer-events: none; }
+.video-card .two.is-playing { opacity: 1; }
+.video-card video { display: block; width: 100%; height: auto; }
+
+/* Match the adjacent emNavi preview (1280 × 400) for both poster and video. */
+.video-card .airgym-preview { aspect-ratio: 16 / 5; overflow: hidden; }
+.video-card .airgym-preview .two { inset: 0; height: 100%; }
+.video-card .airgym-preview > img,
+.video-card .airgym-preview video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Keep every publication/project aligned independently of its text length. */
+.mainContent .section2 > .video-card {
+    display: grid;
+    grid-template-columns: minmax(0, 37fr) minmax(0, 60fr);
+    grid-template-rows: auto auto;
+    column-gap: 3%;
+    row-gap: 8px;
+    align-items: start;
+    margin: 24px 0;
+}
+.video-card > .sectionContent,
+.video-card > .section2Content,
+.mainContent .video-card > .externalResourcesNav {
+    float: none;
+    width: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+.video-card > .sectionContent { grid-column: 1; grid-row: 1 / 3; }
+.video-card > .section2Content { grid-column: 2; grid-row: 1; }
+.mainContent .video-card > .externalResourcesNav {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.video-card .section2Content > :first-child { margin-top: 0; }
+.video-card .section2Content > :last-child { margin-bottom: 0; }
+.video-card .one > img { display: block; }
+.mainContent .video-card .externalResourcesNav > .dropdown {
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 30px;
+    height: auto;
+    padding: 5px 0;
+}
+.video-card + br,
+.video-card + br + br { display: none; }
+
+@media only screen and (max-width: 480px) {
+    .mainContent .section2 > .video-card {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 12px;
+    }
+    .video-card > .sectionContent { grid-column: 1; grid-row: 1; }
+    .video-card > .section2Content { grid-column: 1; grid-row: 2; }
+    .mainContent .video-card > .externalResourcesNav {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
+/* Use consistent typography and explicit spacing within the book entry. */
+.book-info { text-align: left; }
+.book-info > .sectionContentTitle {
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+.book-info > .book-authors {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+.book-info > .book-summary {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+.book-info > .book-acknowledgments {
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0;
 }

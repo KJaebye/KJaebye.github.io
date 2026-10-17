@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
@@ -44,10 +44,6 @@
                 <img src="profile/scholar.png"  alt="sample" width="30"></a>
         </div>
         <div class="socialNetworkNav">
-            <a href="" target="_blank">
-                <img src="profile/linkedin.png"  alt="sample" width="30"></a>
-        </div>
-        <div class="socialNetworkNav">
             <a href="https://orcid.org/0000-0002-5708-2620" target="_blank">
                 <img src="profile/orcid.png"  alt="sample" width="30"></a>
         </div>
@@ -58,87 +54,6 @@
     </aside>
 </header>
 
-<section class="mainContent"> 
-    <section class="section2">
-        <h2 class="sectionTitle">Top Open-source Projects</h2>
-        <!-- <hr class="sectionTitleRule"> -->
-        <hr class="sectionTitleRule2">
-
-    <!-- AirGym-Sim  -->
-    <div onmouseout="airgym_sim_stop()" onmouseover="airgym_sim_start()">	  
-        <div class="sectionContent" style="padding:0px;vertical-align:middle">
-            <div class="one">
-                <div class="two" id="airgym-sim_image">
-                    <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                        <source src="material/airgym-sim.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <img src="material/airgym-sim.png" width="100%">
-            </div>
-            <script type="text/javascript">
-                function airgym_sim_start() {
-                document.getElementById('airgym-sim_image').style.opacity = "1";
-                }
-
-                function airgym_sim_stop() {
-                document.getElementById('airgym-sim_image').style.opacity = "0";
-                }
-                airgym_sim_stop()
-            </script>
-        </div>
-        <section class="section2Content">
-            <h2 class="sectionContentTitle"> <img src="material/airgym-logo.png" alt="emNavi" style="height: 30px; vertical-align: middle;"> Quadrotor DRL Simulation Platform  </h2>
-                <p style="font-size: 12px;"><b>AirGym</b> is an open souce Python quadrotor simulator based on IsaacGym, a part of AirGym series Sim-to-Real working flow. It provides a high-fidelity dynamics and Deep Reinforcement Learning (DRL) framework for quadrotor robot learning research. Furthermore, we also provide toolkits for transferring policy from AirGym simulator to the real quadrotor emNavi-X152b, making Sim-to-Real possible.  </p>
-            </h2>
-
-        </section>
-        <aside class="externalResourcesNav" style="margin-top:0%"> 
-            <div class="dropdown">
-                <span></span><a href="https://github.com/emNavi/AirGym" target="_blank">Github</a>
-            </div>
-            <div class="dropdown">
-                <span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Project Page</a>
-            </div>
-        </aside>
-    </div>
-    <br>
-
-
-</section>
-
-<section class="mainContent"> 
-    <section class="section2">
-        <h2 class="sectionTitle">Book</h2>
-        <!-- <hr class="sectionTitleRule"> -->
-        <hr class="sectionTitleRule2">
-
-        <!-- Book Content -->
-        <div class="book-container">
-            <div class="book-cover">
-                <img src="material/book_springer.png" alt="cover" class="book-image">
-            </div>
-            <div class="book-info"> 
-                <h3 class="sectionContentTitle">
-                    <a href="https://link.springer.com/book/10.1007/978-981-96-5871-8">Embodied Multi-Agent Systems</a>
-                </h3>
-                <h3 class="sectionContentSubTitle" style="font-size: 11px;"> 
-                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>,
-                    <a href="" target="_blank">Xinzhu Liu</a>,
-                    <b>Kangyao Huang</b>, 
-                    <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>
-                </h3>
-                <p class="book-summary" style="font-size: 11px;">
-                    This book focuses on active perception and interactive learning for embodied multi-agent systems. The remarkable reasoning, perception, and decision-making capabilities demonstrated by LLM in recent years have brought significant opportunities for the exploration of artificial general intelligence (AGI). This results in the development of increasingly larger models and a higher consumption of data. The ultimate goal is to achieve AGI through a unified brain model. However, when it comes to embodied agents, this strategy encounters considerable challenges due to the variety in morphology and function among these agents. It is neither feasible nor desirable to expect all embodied agents to conform to a single morphology. Instead, we should embrace the principles of biodiversity, promoting the existence, collaboration, and interaction of various forms. This recognition has motivated our research into embodied multi-agent systems. During this process, we have realized that active perception, along with the interactive learning capabilities that stem from it, plays a crucial role in fostering collaboration and synergy among multiple embodied agents.
-                </p>
-                <p style="font-size: 10px;color: rgba(141, 20, 139, 0.579);">
-                    We would like to thank Prof. Angelo Cangelosi, Prof. David Hsu, Prof. John Aloimonos who provide lots of support. We would like to express our gratitude to Dr. Hongbo Li from Geek+ and Dr. Tianlei Zhang from TrunkTech for their invaluable support in our study of embodied multi-agent collaboration. Additionally, we would like to express our sincere gratitude to Chenxu Wang, Xinghang Li, Juan Wang, Peiyan Li, Pingcheng Jian, and Chuye Hong for their significant assistance in preparing the figures and proofreading the book.
-                </p>
-            </div>
-        </div>
-
-    </section>
-</section>
 <!-- content -->
 <section class="mainContent"> 
     <section class="section2">
@@ -147,27 +62,17 @@
         <hr class="sectionTitleRule2">
 
         <!-- spatialfly -->
-        <div onmouseout="spatialfly_stop()" onmouseover="spatialfly_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="spatialfly_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/spatialfly.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/spatialfly.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/spatialfly.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function spatialfly_start() {
-                    document.getElementById('spatialfly_image').style.opacity = "1";
-                    }
-
-                    function spatialfly_stop() {
-                    document.getElementById('spatialfly_image').style.opacity = "0";
-                    }
-                    spatialfly_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> SpatialFly: Geometry-Guided Representation Alignment for UAV Vision-and-Language Navigation in Urban Environments </h2>
@@ -197,33 +102,22 @@
                     </div>
                 </div>
                 <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2603.21046" target="_blank">Paper</a></div>
-                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
             </aside>
         </div>
         <br>
 
         <!-- diffmuscle -->
-        <div onmouseout="diffmuscle_stop()" onmouseover="diffmuscle_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="diffmuscle_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/diffmuscle.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/diffmuscle.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/diffmuscle.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function diffmuscle_start() {
-                    document.getElementById('diffmuscle_image').style.opacity = "1";
-                    }
-
-                    function diffmuscle_stop() {
-                    document.getElementById('diffmuscle_image').style.opacity = "0";
-                    }
-                    diffmuscle_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Diff-Muscle: Efficient Learning for Musculoskeletal Robotic Table Tennis </h2>
@@ -247,34 +141,23 @@
                     </div>
                 </div>
                 <div class="dropdown"><span></span><a href="https://arxiv.org/pdf/2603.08617" target="_blank">Paper</a></div>
-                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
             </aside>
         </div>
         <br>
         <br>
 
         <!-- longfly -->
-        <div onmouseout="longfly_stop()" onmouseover="longfly_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="longfly_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/longfly2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/longfly2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/longfly.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function longfly_start() {
-                    document.getElementById('longfly_image').style.opacity = "1";
-                    }
-
-                    function longfly_stop() {
-                    document.getElementById('longfly_image').style.opacity = "0";
-                    }
-                    longfly_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration </h2>
@@ -322,33 +205,23 @@
                     </div>
                 </div>
                 <div class="dropdown"><span></span><a href="https://www.arxiv.org/pdf/2512.22010" target="_blank">Paper</a></div>
-                <!-- <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div> -->
+                <!-- -->
             </aside>
         </div>
         <br>
 
         <!-- ActiveEventNet+ -->
-        <div onmouseout="activeEventNet_stop()" onmouseover="activeEventNet_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="activeEventNet_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2026pami.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2026pami.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2026pami.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function activeEventNet_start() {
-                    document.getElementById('activeEventNet_image').style.opacity = "1";
-                    }
-
-                    function activeEventNet_stop() {
-                    document.getElementById('activeEventNet_image').style.opacity = "0";
-                    }
-                    activeEventNet_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Towards Ultrafast Depth Sensing Via Active Event-based Stereo Vision </h2>
@@ -391,27 +264,17 @@
         <br><br>
 
         <!-- ral compet drone-->
-        <div onmouseout="competdrone_stop()" onmouseover="competdrone_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="competdrone_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/ral-compet-drone_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/ral-compet-drone_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/ral-compet-drone.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function competdrone_start() {
-                    document.getElementById('competdrone_image').style.opacity = "1";
-                    }
-
-                    function competdrone_stop() {
-                    document.getElementById('competdrone_image').style.opacity = "0";
-                    }
-                    competdrone_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Competitive Learning for Autonomous Flight </h2>
@@ -445,27 +308,17 @@
         <br>
 
         <!--nature review ee-->
-        <div onmouseout="nree_stop()" onmouseover="nree_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="nree_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2025nree_1.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2025nree_1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2025nree_1.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function nree_start() {
-                    document.getElementById('nree_image').style.opacity = "1";
-                    }
-
-                    function nree_stop() {
-                    document.getElementById('nree_image').style.opacity = "0";
-                    }
-                    nree_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Learning for Embodiment and Embodiment for Learning </h2>
@@ -494,37 +347,27 @@
         <br><br>
 
         <!-- airgym-->
-        <div onmouseout="airgym_stop()" onmouseover="airgym_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="airgym_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/airgym_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/airgym_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/airgym_1.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function airgym_start() {
-                    document.getElementById('airgym_image').style.opacity = "1";
-                    }
-
-                    function airgym_stop() {
-                    document.getElementById('airgym_image').style.opacity = "0";
-                    }
-                    airgym_stop()
-                </script>
             </div>
             <section class="section2Content">
-                <h2 class="sectionContentTitle"> Towards Task-Oriented Flying: Framework, Infrastructure, and Principles </h2>
+                <h2 class="sectionContentTitle"> AirGym: A Full-Stack Platform for Aerial Robot Reinforcement Learning and Sim-to-Real Transfer </h2>
                 <h3 class="sectionContentSubTitle"> 
                     <b>Kangyao Huang*</b>, 
                     <a>Hao Wang*</a>,
-                    <a>Jingyu Chen</a>,
+                    <a href="https://scholar.google.com.hk/citations?user=j63_EA0AAAAJ" target="_blank">Jingyu Chen</a>,
                     <a>Jintao Chen</a>,
-                    <a>Yu Luo</a>,
-                    <a>Di Guo</a>,
+                    <a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=KQjoQOMAAAAJ" target="_blank">Yu Luo</a>,
+                    <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>,
                     <a>Xiangkui Zhang</a>,
                     <a>Xiangyang Ji</a>,
                     <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a><ion-icon name="mail-outline"></ion-icon> 
@@ -534,7 +377,7 @@
                     </a>
                 </h3>
                 <h3 class="sectionContentSubTitle">
-                    <em> arXiv</em>
+                    <em>IEEE Robotics and Automation Practice (<b>RA-P</b>), 2026</em>
                 </h3>
             </section>
             <aside class="externalResourcesNav" style="margin-top:0%">
@@ -544,12 +387,11 @@
                 <div class="dropdown"> <span>Abstract</span>
                     <div class="dropdown-content">
                         <p style="text-align:left;font-size: 10px;">
-                            Deploying robot learning methods to a quadrotor in unstructured outdoor environments is an exciting task. Quadrotors operating in real-world environments by learning-based methods encounter several challenges: a large amount of simulator generated data required for training, strict demands for real-time processing onboard, and the sim-to-real gap caused by dynamic and noisy conditions. Current works have made a great breakthrough in applying learning-based methods to end-to-end control of quadrotors, but rarely mention the infrastructure system training from scratch and deploying to reality, which makes it difficult to reproduce methods and applications. To bridge this gap, we propose a platform that enables the seamless transfer of end-to-end deep reinforcement learning (DRL) policies. We integrate the training environment, flight dynamics control, DRL algorithms, the MAVROS middleware stack, and hardware into a comprehensive workflow and architecture that enables quadrotors' policies to be trained from scratch to real-world deployment in several minutes. Our platform provides rich types of environments including hovering, dynamic obstacle avoidance, trajectory tracking, balloon hitting, and planning in unknown environments, as a physical experiment benchmark. Through extensive empirical validation, we demonstrate the efficiency of proposed sim-to-real platform, and robust outdoor flight performance under real-world perturbations. Details can be found from our website https://emnavi.tech/AirGym/.
-
+                            Deep reinforcement learning (DRL) enables agile quadrotor flight, but sim-to-real deployment remains engineering-intensive because training, control, inference, and deployment tools are fragmented. We present AirGym, an open-source full-stack platform that integrates an Isaac Gym-based benchmark module spanning multiple tasks with PX4-aligned parallel control, onboard inference, command bridging, and physical deployment. The benchmark ranges from low-level control to end-to-end visual decision making. AirGym also distills practical findings on control abstraction, reward design, and domain randomization. Its parallel controller matches the native PX4 inner-loop implementation, with maximum errors below 10<sup>−5</sup>. In physical quadrotor tests, domain randomization reduced outdoor tracking error by up to 41%, while dynamic-obstacle avoidance achieved a success rate above 90% for objects thrown at 10–15 m⋅s<sup>−1</sup>. AirGym provides a cohesive workflow for rapid training, reproducible evaluation, and practical sim-to-real transfer.
                         </p>
                     </div>
                 </div>
-                <div class="dropdown"><span></span><a href="" target="_blank">Paper</a></div>
+                <div class="dropdown"><span></span><a href="https://ieeexplore.ieee.org/document/11733793" target="_blank">Paper</a></div>
                 <div class="dropdown"><span></span><a href="https://github.com/emNavi/AirGym" target="_blank">Code</a></div>
                 <div class="dropdown"><span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Video</a></div>
             </aside>
@@ -557,27 +399,17 @@
         <br>
 
         <!-- d_hrl-->
-        <div onmouseout="d_hrl_stop()" onmouseover="d_hrl_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="d_hrl_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2024dhrl_1.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2024dhrl_1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2024dhrl_1.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function d_hrl_start() {
-                    document.getElementById('d_hrl_image').style.opacity = "1";
-                    }
-
-                    function d_hrl_stop() {
-                    document.getElementById('d_hrl_image').style.opacity = "0";
-                    }
-                    d_hrl_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Learning a Distributed Hierarchical Locomotion Controller for Embodied Cooperation </h2>
@@ -615,7 +447,6 @@
                     </div>
                 </div>
                 <div class="dropdown"><span></span><a href="https://proceedings.mlr.press/v270/hong25a.html" target="_blank">Paper</a></div>
-                <div class="dropdown"><span></span><a href="" target="_blank">Code</a></div>
                 <div class="dropdown"><span></span><a href="https://d-hrl.github.io/" target="_blank">Video</a></div>
             </aside>
         </div>
@@ -623,27 +454,17 @@
         <br>
 
         <!-- 2024ijcai-->
-        <div onmouseout="ijcai24_stop()" onmouseover="ijcai24_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="ijcai24_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2024ijcai_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2024ijcai_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2024ijcai.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function ijcai24_start() {
-                    document.getElementById('ijcai24_image').style.opacity = "1";
-                    }
-
-                    function ijcai24_stop() {
-                    document.getElementById('ijcai24_image').style.opacity = "0";
-                    }
-                    ijcai24_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> CompetEvo: Towards Morphological Evolution from Competition </h2>
@@ -687,27 +508,17 @@
         <br><br>
 
         <!-- 2024icra-->
-        <div onmouseout="icra24_stop()" onmouseover="icra24_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="icra24_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2024icra_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2024icra_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2024icra.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function icra24_start() {
-                    document.getElementById('icra24_image').style.opacity = "1";
-                    }
-
-                    function icra24_stop() {
-                    document.getElementById('icra24_image').style.opacity = "0";
-                    }
-                    icra24_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Stimulate the Potential of Robots via Competition </h2>
@@ -752,27 +563,17 @@
         <br><br>
 
         <!-- 2023aim  -->
-        <div onmouseout="aim_stop()" onmouseover="aim_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="aim_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2023aim_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2023aim_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2023aim_1.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function aim_start() {
-                    document.getElementById('aim_image').style.opacity = "1";
-                    }
-
-                    function aim_stop() {
-                    document.getElementById('aim_image').style.opacity = "0";
-                    }
-                    aim_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> A Multi-modal Deformable Land-air Robot for Complex Environments </h2>
@@ -816,27 +617,17 @@
         <br>
 
         <!-- 2023tmech  -->
-        <div onmouseout="tmech_stop()" onmouseover="tmech_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="tmech_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2023tmech_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2023tmech_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2023tmech.png" width="100%" height="100%">
                 </div>
-                <script type="text/javascript">
-                    function tmech_start() {
-                    document.getElementById('tmech_image').style.opacity = "1";
-                    }
-
-                    function tmech_stop() {
-                    document.getElementById('tmech_image').style.opacity = "0";
-                    }
-                    tmech_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Coupled Modeling and Fusion Control for a Multi-modal Deformable Land-air Robot </h2>
@@ -880,27 +671,17 @@
         <br>
 
         <!-- 2023icuas  -->
-        <div onmouseout="icuas_stop()" onmouseover="icuas_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="icuas_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2023ICUAS_1.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2023ICUAS_1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2023ICUAS.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function icuas_start() {
-                    document.getElementById('icuas_image').style.opacity = "1";
-                    }
-
-                    function icuas_stop() {
-                    document.getElementById('icuas_image').style.opacity = "0";
-                    }
-                    icuas_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Path Planning for Air-Ground Robot Considering Modal Switching Point Optimization </h2>
@@ -948,27 +729,17 @@
         <br><br>
 
         <!-- 2023中国科学  -->
-        <div onmouseout="scichina_stop()" onmouseover="scichina_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="scichina_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2023scichina.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2023scichina.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2023scichina.jpg" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function scichina_start() {
-                    document.getElementById('scichina_image').style.opacity = "1";
-                    }
-
-                    function scichina_stop() {
-                    document.getElementById('scichina_image').style.opacity = "0";
-                    }
-                    scichina_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitleSmall">State-of-the-art and Technical Trends of Intelligent Flying Cars</h2>
@@ -1015,27 +786,17 @@
 
 
         <!-- 2022tiv  -->
-        <div onmouseout="tiv_stop()" onmouseover="tiv_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="tiv_image">
-                        <video  width="100%" muted="" autoplay="" loop="">
-                            <source src="material/2022tiv_1.mp4" type="video/mp4">
+                        <video  width="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2022tiv_1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2022tiv_1.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function tiv_start() {
-                    document.getElementById('tiv_image').style.opacity = "1";
-                    }
-
-                    function tiv_stop() {
-                    document.getElementById('tiv_image').style.opacity = "0";
-                    }
-                    tiv_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Intelligent Amphibious Ground-aerial Vehicles: State of the Art Technology for Future Transportation </h2>
@@ -1078,27 +839,17 @@
         <br>
 
         <!-- 2021ciac  -->
-        <div onmouseout="ciac_stop()" onmouseover="ciac_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="ciac_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2021CIAC.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2021CIAC.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2021CIAC0.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function ciac_start() {
-                    document.getElementById('ciac_image').style.opacity = "1";
-                    }
-
-                    function ciac_stop() {
-                    document.getElementById('ciac_image').style.opacity = "0";
-                    }
-                    ciac_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Bio-inspired Multi-agent Model and Optimization Strategy for Collaborative Aerial Transport </h2>
@@ -1131,27 +882,17 @@
         <br>
 
         <!-- 2023swevo  -->
-        <div onmouseout="swevo_stop()" onmouseover="swevo_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="swevo_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2021SWEVO.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2021SWEVO.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2021SWEVO.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function swevo_start() {
-                    document.getElementById('swevo_image').style.opacity = "1";
-                    }
-
-                    function swevo_stop() {
-                    document.getElementById('swevo_image').style.opacity = "0";
-                    }
-                    swevo_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Decentralised Aerial Swarm for Adaptive and Energy Efficient Transport of Unknown Loads </h2>
@@ -1200,80 +941,83 @@
         <br><br>
 	</section>
 
+    <section class="section2">
+        <h2 class="sectionTitle">Book</h2>
+        <!-- <hr class="sectionTitleRule"> -->
+        <hr class="sectionTitleRule2">
+
+        <!-- Book Content -->
+        <div class="book-container">
+            <div class="book-cover">
+                <img src="material/book_springer.png" alt="cover" class="book-image">
+            </div>
+            <div class="book-info">
+                <h3 class="sectionContentTitle">
+                    <a href="https://link.springer.com/book/10.1007/978-981-96-5871-8">Embodied Multi-Agent Systems</a>
+                </h3>
+                <h3 class="sectionContentSubTitle book-authors">
+                    <a href="https://scholar.google.com.hk/citations?user=HXnkIkwAAAAJ" target="_blank">Huaping Liu</a>,
+                    <a>Xinzhu Liu</a>,
+                    <b>Kangyao Huang</b>,
+                    <a href="https://scholar.google.com.hk/citations?user=OCauNHUAAAAJ" target="_blank">Di Guo</a>
+                </h3>
+                <p class="book-summary">
+                    This book focuses on active perception and interactive learning for embodied multi-agent systems. The remarkable reasoning, perception, and decision-making capabilities demonstrated by LLM in recent years have brought significant opportunities for the exploration of artificial general intelligence (AGI). This results in the development of increasingly larger models and a higher consumption of data. The ultimate goal is to achieve AGI through a unified brain model. However, when it comes to embodied agents, this strategy encounters considerable challenges due to the variety in morphology and function among these agents. It is neither feasible nor desirable to expect all embodied agents to conform to a single morphology. Instead, we should embrace the principles of biodiversity, promoting the existence, collaboration, and interaction of various forms. This recognition has motivated our research into embodied multi-agent systems. During this process, we have realized that active perception, along with the interactive learning capabilities that stem from it, plays a crucial role in fostering collaboration and synergy among multiple embodied agents.
+                </p>
+                <p class="book-acknowledgments" style="color: rgba(141, 20, 139, 0.579);">
+                    We would like to thank Prof. Angelo Cangelosi, Prof. David Hsu, Prof. John Aloimonos who provide lots of support. We would like to express our gratitude to Dr. Hongbo Li from Geek+ and Dr. Tianlei Zhang from TrunkTech for their invaluable support in our study of embodied multi-agent collaboration. Additionally, we would like to express our sincere gratitude to Chenxu Wang, Xinghang Li, Juan Wang, Peiyan Li, Pingcheng Jian, and Chuye Hong for their significant assistance in preparing the figures and proofreading the book.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
     <!-- Projects -->
     <section class="section2">
         <h2 class="sectionTitle">Projects</h2>
         <!-- <hr class="sectionTitleRule"> -->
         <hr class="sectionTitleRule2">
 
-        <!-- emNavi  -->
-        <div onmouseout="emNavi_stop()" onmouseover="emNavi_start()">	  
+        <!-- AirGym simulation platform -->
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
-                <div class="one">
-                    <div class="two" id="emNavi_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/X152b-ego_1.mp4" type="video/mp4">
+                <div class="one airgym-preview">
+                    <div class="two" id="airgym-sim_image">
+                        <video width="100%" height="100%" muted preload="none" playsinline loop>
+                            <source data-src="material/airgym-sim.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <img src="material/X152b-ego.png" width="100%">
+                    <img src="material/airgym-sim.png" alt="AirGym quadrotor simulation platform" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function emNavi_start() {
-                    document.getElementById('emNavi_image').style.opacity = "1";
-                    }
-
-                    function emNavi_stop() {
-                    document.getElementById('emNavi_image').style.opacity = "0";
-                    }
-                    emNavi_stop()
-                </script>
             </div>
             <section class="section2Content">
-                <h2 class="sectionContentTitle"><img src="material/logo1.png" alt="emNavi" style="height: 30px; vertical-align: middle;"></h2>
-                    <p style="font-size: 10px;"><b>emNavi</b> derives from "Embodied Navigation". 
-                        The vision of emNavi is to make navigation more intelligent. Besides, emNavi is an open-sourced project that re-construct and optimize the navigation-related SoTA (state of the art) 
-                        algorithms and apply them on robots, especially aerial robots, to promote the implementation of Embodied AI 
-                        on mobile robots. </p>
-                </h2>
-
+                <h2 class="sectionContentTitle"><img src="material/airgym-logo.png" alt="AirGym" style="height: 30px; vertical-align: middle;"> Quadrotor DRL Simulation Platform</h2>
+                <p style="font-size: 10px;"><b>AirGym</b> is an open-source full-stack platform for quadrotor deep reinforcement learning (DRL) and sim-to-real transfer. It integrates an Isaac Gym-based multi-task simulator, PX4-aligned parallel control, onboard inference, and deployment tools for transferring learned policies to the physical <b>emNavi-X152b</b> quadrotor.</p>
             </section>
-            <aside class="externalResourcesNav" style="margin-top:0%"> 
+            <aside class="externalResourcesNav" style="margin-top:0%">
                 <div class="dropdown">
-                    <span></span><a href="https://emnavi.tech/" target="_blank">emNavi</a>
+                    <span></span><a href="https://github.com/emNavi/AirGym" target="_blank">GitHub</a>
                 </div>
                 <div class="dropdown">
-                    <span></span><a href="https://emnavi.tech/droneKit/" target="_blank">X152b</a>
-                </div>
-                <div class="dropdown">
-                    <span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Sim2Real</a>
+                    <span></span><a href="https://emnavi.tech/AirGym/" target="_blank">Project Page</a>
                 </div>
             </aside>
         </div>
         <br>
 
         <!-- vps  -->
-        <div onmouseout="vps_stop()" onmouseover="vps_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="vps_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/vps_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/vps_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/vps.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function vps_start() {
-                    document.getElementById('vps_image').style.opacity = "1";
-                    }
-
-                    function vps_stop() {
-                    document.getElementById('vps_image').style.opacity = "0";
-                    }
-                    vps_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> GhostLoc: Geospatial High-precise Optical System for Tactical Localization</h2>
@@ -1292,12 +1036,12 @@
         <br>
 
         <!-- flyingcar  -->
-        <div onmouseout="flyingcar_stop()" onmouseover="flyingcar_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="flyingcar_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/flyingcar_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/flyingcar_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <aside class="externalResourcesNav" style="margin-top:0%">
@@ -1309,16 +1053,6 @@
                     </div>
                     <img src="material/flyingcar.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function flyingcar_start() {
-                    document.getElementById('flyingcar_image').style.opacity = "1";
-                    }
-
-                    function flyingcar_stop() {
-                    document.getElementById('flyingcar_image').style.opacity = "0";
-                    }
-                    flyingcar_stop()
-                </script>
                 
             </div>
             <section class="section2Content">
@@ -1354,27 +1088,17 @@
         <br>
 
         <!-- 2021ad  -->
-        <div onmouseout="ad_stop()" onmouseover="ad_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="ad_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/2021ad.png" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/2021ad.png" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/2021ad.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function ad_start() {
-                    document.getElementById('ad_image').style.opacity = "1";
-                    }
-
-                    function ad_stop() {
-                    document.getElementById('ad_image').style.opacity = "0";
-                    }
-                    ad_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Roadside Autonomous Driving Architecture towards SCSTSV </h2>
@@ -1394,27 +1118,17 @@
         <br>
 
         <!-- solar-uav  -->
-        <div onmouseout="solar_stop()" onmouseover="solar_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="solar_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/solar-uav_2.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/solar-uav_2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/solar-uav-pic.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function solar_start() {
-                    document.getElementById('solar_image').style.opacity = "1";
-                    }
-
-                    function solar_stop() {
-                    document.getElementById('solar_image').style.opacity = "0";
-                    }
-                    solar_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Solar-powered UAV for Long Duration Cruising</h2>
@@ -1431,27 +1145,17 @@
         <br>
 
         <!-- evtol tracking  -->
-        <div onmouseout="evtol_stop()" onmouseover="evtol_start()">	  
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="evtol_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/evtol_tracking.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/evtol_tracking.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/evtol_tracking.png" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function evtol_start() {
-                    document.getElementById('evtol_image').style.opacity = "1";
-                    }
-
-                    function evtol_stop() {
-                    document.getElementById('evtol_image').style.opacity = "0";
-                    }
-                    evtol_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Auto-Patrolling eVTOL UAV and Tracking System</h2>
@@ -1465,27 +1169,17 @@
         <br>
 
         <!-- auto-patrolling  -->
-        <!-- <div onmouseout="patrolling_stop()" onmouseover="patrolling_start()">	  
+        <!-- <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="patrolling_image">
-                        <video  width="100%" height="100%" muted="" autoplay="" loop="">
-                            <source src="material/auto-patrolling.mp4" type="video/mp4">
+                        <video  width="100%" height="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/auto-patrolling.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/auto-patrolling.jpg" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function patrolling_start() {
-                    document.getElementById('patrolling_image').style.opacity = "1";
-                    }
-
-                    function patrolling_stop() {
-                    document.getElementById('patrolling_image').style.opacity = "0";
-                    }
-                    patrolling_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Auto-Patralling UAV Platform</h2>
@@ -1500,27 +1194,17 @@
         <br> -->
         
         <!-- oil-drone  -->
-        <div onmouseout="oil_stop()" onmouseover="oil_start()">
+        <div class="video-card">
             <div class="sectionContent" style="padding:0px;vertical-align:middle">
                 <div class="one">
                     <div class="two" id="oil_image">
-                        <video  width="100%" muted="" autoplay="" loop="">
-                            <source src="material/oil-drone.mp4" type="video/mp4">
+                        <video  width="100%" muted="" preload="none" playsinline loop="">
+                            <source data-src="material/oil-drone.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <img src="material/oil-drone.jpg" width="100%">
                 </div>
-                <script type="text/javascript">
-                    function oil_start() {
-                    document.getElementById('oil_image').style.opacity = "1";
-                    }
-
-                    function oil_stop() {
-                    document.getElementById('oil_image').style.opacity = "0";
-                    }
-                    oil_stop()
-                </script>
             </div>
             <section class="section2Content">
                 <h2 class="sectionContentTitle"> Oil-powered Variable-pitch Quadrotor</h2>
@@ -1699,6 +1383,7 @@
   <p class="footerNote"></p>
 </footer>
 
+<script src="scripts/video-previews.js" defer></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
