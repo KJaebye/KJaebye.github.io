@@ -708,7 +708,9 @@ footer .footerNote {
 }
 .video-card .section2Content > :first-child { margin-top: 0; }
 .video-card .section2Content > :last-child { margin-bottom: 0; }
-.video-card .one > img { display: block; }
+/* Keep space for deferred posters before the image finishes loading. */
+.video-card .one > img { display: block; width: 100%; height: auto; }
+.video-card .airgym-preview > img { height: 100%; }
 .mainContent .video-card .externalResourcesNav > .dropdown {
     margin: 0;
     box-sizing: border-box;
